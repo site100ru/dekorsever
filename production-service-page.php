@@ -225,8 +225,8 @@
 	</header>
 	<div class="container">
 		<div class="row align-items-center home-section-height">
-			<div class="col-xl-10 col-xxl-9">
-				<h1 class="home-title mb-3">Изготовление и реставрация Мебельных фасадов</h1>
+			<div class="col-xl-10 col-xxl-12">
+				<h1 class="home-title mb-3 mt-4">Изготовление и реставрация Мебельных фасадов</h1>
 				<h2 class="home-subtitle mb-4">Для кухонь, шкафов и другой корпусной мебели</h2>
 			</div>
 			<div class="row advantages">
