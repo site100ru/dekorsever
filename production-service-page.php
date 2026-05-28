@@ -1,7 +1,7 @@
 <?php
 	
 	/**
-	 * Template Name: Покраска
+	 * Template Name: Фасады для мебели
 	 * Template Post Type: page
 	 */
 	
@@ -10,8 +10,8 @@
 ?>
 <!-- Home section -->
 <div id="sp-home" class="scroll-points"></div>
-<section class="main-home-section painting-home-section painting-home-section-painting position-relative">
-	<div class="parallax-home-section-painting" style="min-height: 640px;"></div>
+<section class="main-home-section painting-home-section production-service painting-home-section-painting position-relative ">
+	<div class="painting-home-section-production-service" style="min-height: 640px;"></div>
 	<header class="d-none d-lg-block">
 		<!-- Header nav top -->
 		<nav class="header-nav-top navbar navbar-expand-lg navbar-light d-none d-lg-block py-0">
@@ -109,7 +109,7 @@
 		<nav id="top-menu-1" class="header-nav-bottom navbar navbar-expand-lg navbar-light py-0">
 			<div class="container">
 				<a href="/" class="navbar-brand" rel="home" aria-current="page">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/logo-transparent.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/logo-transparent.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
 				</a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobail-header-collapse" aria-controls="mobail-header-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -166,7 +166,7 @@
 		<nav class="header-nav-bottom navbar navbar-expand-lg navbar-light py-1 py-lg-0">
 			<div class="container">
 				<a href="/" class="navbar-brand" rel="home" aria-current="page">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/logo.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/logo.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
 				</a>
 
 				<div class="d-lg-none">
@@ -226,7 +226,8 @@
 	<div class="container">
 		<div class="row align-items-center home-section-height">
 			<div class="col-xl-10 col-xxl-9">
-				<h1 class="home-title">Покраска кухонных фасадов и другой мебели из МДФ, шпона, дерева, ДСП, и фанеры</h1>
+				<h1 class="home-title mb-3">Изготовление и реставрация Мебельных фасадов</h1>
+				<h2 class="home-subtitle mb-4">Для кухонь, шкафов и другой корпусной мебели</h2>
 			</div>
 			<div class="row advantages">
 				<div class="col-lg-4 col-md-6 section_paint_home mb-3 mb-lg-0">
@@ -247,7 +248,7 @@
 						</div>
 						<div class="col-9 section_paint">
 							<h2 class="advantage-title text-start" style="color: #fff;">Скидки от объема</h2>
-							<p class="home-advantage-description">На большие заказы особые&nbsp;условия</p>
+							<p class="home-advantage-description">На большие заказы особые &nbsp;условия</p>
 						</div>
 					</div>
 				</div>
@@ -257,7 +258,7 @@
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/rewerd-ico.svg" alt="">
 						</div>
 						<div class="col-9 section_paint">
-							<h2 class="advantage-title text-start" style="color: #fff;">Даем гарантию 2 года</h2>
+							<h2 class="advantage-title text-start" style="color: #fff;">Гарантия 2 года</h2>
 							<p class="home-advantage-description">На материалы и работу</p>
 						</div>
 					</div>
@@ -280,18 +281,24 @@
 		<div class="row">
 			<div class="col">
 				<div class="breadcrumbs py-4">
-					<?php woocommerce_breadcrumb(); ?>
+					<nav class="woocommerce-breadcrumb" itemprop="breadcrumb">
+						<a href="/">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/breadcrumbs-icon.svg">
+						</a> / Услуги / Изготовление мебельных фасадов
+					</nav>
 				</div>
 			</div>
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-lg-10 col-md-10 mx-auto item_text">
-				<p>Методов отделки деревянных изделий очень много, самым распространенным из них является покраска эмалью. При покрытии эмалью структура дерева становится практически не видна (в зависимости от породы древесины). Эмаль можно использовать абсолютно любых цветов: от пастельных до самых ярких или темных, поэтому крашенная деревянная мебель отлично впишется в любой интерьер, оставаясь при этом прочной и экологичной.</p>
+				<p>Наша компания изготавливает фасады мебели из МДФ, шпона, массива дерева, ЛДСП. Фасады из МДФ могут быть как прямыми, так и фрезерованными. Затем мы покрасим их в любой, выбранный Вами цвет.</p>
+				<p>Все работы проводятся на современном высококлассном оборудовании, благодаря которому обеспечивается качество выполнения заказа.</p>
+				<p>При выполнении заказа мы учитываем все индивидуальные пожелания клиента.</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col text-md-center">
-				<h2 style="margin-top: 60px;">Предметы, которые мы красим:</h2>
+				<h2 style="margin-top: 60px;">Фасады, которые мы изготовляем:</h2>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 			</div>
 		</div>
@@ -299,7 +306,7 @@
 			<div class="col-md-3 mb-3">
 				<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal">
 					<div class="approximation project-container-2 rounded">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card5.jpg" class="img-fluid" alt="" decoding="async" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facades/facades-card-1.jpg" class="img-fluid" alt="" decoding="async" />
 						<div class="card-wrapper project-container-2-footer">
 							<div class="row">
 								<div class="col-6" style="width: auto;">
@@ -313,11 +320,11 @@
 			<div class="col-md-3 mb-3">
 				<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal">
 					<div class="approximation project-container-2 rounded">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card6.jpg" class="img-fluid" alt="" decoding="async" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facades/facades-card-2.jpg" class="img-fluid" alt="" decoding="async" />
 						<div class="card-wrapper project-container-2-footer">
 							<div class="row">
 								<div class="col-6" style="width: auto;">
-									<h3 style="margin: 0 0 11px 15px;">Шкафы/Тумбы/Другую мебель</h3>
+									<h3 style="margin: 0 0 11px 15px;">Двери-купе</h3>
 								</div>
 							</div>
 						</div>
@@ -327,11 +334,11 @@
 			<div class="col-md-3 mb-3">
 				<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal">
 					<div class="approximation project-container-2 rounded">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card7.jpg" class="img-fluid" alt="" decoding="async" fetchpriority="high" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facades/facades-card-3.jpg" class="img-fluid" alt="" decoding="async" fetchpriority="high" />
 						<div class="card-wrapper project-container-2-footer">
 							<div class="row">
 								<div class="col-6" style="width: auto;">
-									<h3 style="margin: 0 0 11px 15px;">Двери</h3>
+									<h3 style="margin: 0 0 11px 15px;">Распашные двери</h3>
 								</div>
 							</div>
 						</div>
@@ -341,11 +348,11 @@
 			<div class="col-md-3 mb-3">
 				<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal">
 					<div class="approximation project-container-2 rounded">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card8.jpg" class="img-fluid" alt="" decoding="async" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facades/facades-card-4.jpg" class="img-fluid" alt="" decoding="async" />
 						<div class="card-wrapper project-container-2-footer">
 							<div class="row">
 								<div class="col-6" style="width: auto;">
-									<h3 style="margin: 0 0 11px 15px;">Лестницы</h3>
+									<h3 style="margin: 0 0 11px 15px;">Прочие фасады</h3>
 								</div>
 							</div>
 						</div>
@@ -355,7 +362,7 @@
 		</div>
 		<div class="row">
 			<div class="col text-md-center">
-				<h2 style="margin-top: 60px;">Материалы, которые мы красим:</h2>
+				<h2 style="margin-top: 60px;">Материалы из которых мы изготовливаем:</h2>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 			</div>
 		</div>
@@ -363,7 +370,7 @@
 			<div class="col-md-3 mb-3">
 				<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal">
 					<div class="approximation project-container-2 rounded">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card9.jpg" class="img-fluid" alt="" decoding="async" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facades/materials-card-1.jpg" class="img-fluid" alt="" decoding="async" />
 						<div class="card-wrapper project-container-2-footer">
 							<div class="row">
 								<div class="col-6" style="width: auto;">
@@ -377,7 +384,7 @@
 			<div class="col-md-3 mb-3">
 				<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal">
 					<div class="approximation project-container-2 rounded">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card10.jpg" class="img-fluid" alt="" decoding="async" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facades/materials-card-2.jpg" class="img-fluid" alt="" decoding="async" />
 						<div class="card-wrapper project-container-2-footer">
 							<div class="row">
 								<div class="col-6" style="width: auto;">
@@ -391,7 +398,7 @@
 			<div class="col-md-3 mb-3">
 				<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal">
 					<div class="approximation project-container-2 rounded">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card11.jpg" class="img-fluid" alt="" decoding="async" fetchpriority="high" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facades/materials-card-3.jpg" class="img-fluid" alt="" decoding="async" fetchpriority="high" />
 						<div class="card-wrapper project-container-2-footer">
 							<div class="row">
 								<div class="col-6" style="width: auto;">
@@ -405,7 +412,7 @@
 			<div class="col-md-3 mb-3">
 				<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal">
 					<div class="approximation project-container-2 rounded">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/card12.jpg" class="img-fluid" alt="" decoding="async" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facades/materials-card-4.jpg" class="img-fluid" alt="" decoding="async" />
 						<div class="card-wrapper project-container-2-footer">
 							<div class="row">
 								<div class="col-6" style="width: auto;">
@@ -502,7 +509,7 @@
 		<div class="row justify-content-center">
 			<div class="col-xl-10">
 				<div class="col text-md-center">
-					<h2 style="margin-top: 60px;">Цены на покраску</h2>
+					<h2 style="margin-top: 60px;">Цены за изготовление</h2>
 
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 				</div>
@@ -512,7 +519,7 @@
 						<tbody>
 							<tr class="bg-white">
 								<td>
-									<span class="bg-white">Покраска матовой эмалью</span>
+									<span class="bg-white">Изготовление кухонного фасада</span>
 								</td>
 								<td class="text-end">
 									<span class="price-discount bg-white" style="color: #FF5147; font-weight: 600;">от 4 400 руб/кв.м</span>
@@ -530,13 +537,13 @@
 <section class="gradient-order-section bg-light" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/gradient-order-section-bg-bl.jpg); padding-top: 85px; padding-bottom: 84px;">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-md-5 text-md-end">
+			<div class="col-lg-5 ">
 				<h2 class="text-light calcul">Рассчитаем стоимость по фото за 15 минут</h2>
 				<p class="section-description archive-portfolio text-light mb-3">Для расчета присылайте фото или видео с комментариями нам в мессенджер или через форму на сайте. Ответим на вопросы о покраске.</p>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/section-title-dec.svg" style="margin-bottom: 60px;">
 				<br>
 				<a href="#" type="button" class="btn btn-lg btn-corporate-color-1" data-bs-toggle="modal" data-bs-target="#calculatePriceWithDownloadModal">Рассчитать стоимость</a>
-				<div class="d-flex calcul_mess justify-content-md-end" style="margin-top: 40px;">
+				<div class="d-flex calcul_mess" style="margin-top: 40px;">
 					<a class="nav-link ico-button" href="https://t.me/+79361385058" style="margin-right: 20px;">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
 					</a>
@@ -548,7 +555,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-md-7"></div>
+			<div class="col-lg-7"></div>
 		</div>
 	</div>
 </section>
@@ -581,83 +588,66 @@
 		<div class="row">
 			<div class="col align-items-center text-md-center">
 				<h2 class="mb-3">Наши преимущества</h2>
-				<p class="section-description archive-portfolio mb-3">Почему стоит выбрать компанию «Декор-Север»</p>
+				<!-- <p class="section-description archive-portfolio mb-3">Почему стоит выбрать компанию «Декор-Север»</p> -->
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 				<div class="row">
 					<div class="col-lg-6 mb-4">
 						<div class="row">
 							<div class="col-3 col-md-2">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/deadlines-ico.svg" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facades/icon-1.svg" class="img-fluid">
 							</div>
 							<div class="col-9 col-md-10">
-								<h3 class="advantage-title text-start">Оперативные сроки</h3>
-								<p class="text-start">Выполняем заказы от 3-х дней.</p>
+								<h3 class="advantage-title text-start">Большой опыт</h3>
+								<p class="text-start">Мы выполнили более полутора тысяч работ по покраске</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-6 mb-4">
 						<div class="row">
 							<div class="col-3 col-md-2">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/discount-ico.svg" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facades/icon-2.svg" class="img-fluid">
 							</div>
 							<div class="col-9 col-md-10">
-								<h3 class="advantage-title text-start">Скидки от объема</h3>
-								<p class="text-start">На большие или периодические заказы особые условия.</p>
+								<h3 class="advantage-title text-start">Качество</h3>
+								<p class="text-start">Используем качественные материалы и профессиональное оборудование</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-6 mb-4">
 						<div class="row">
 							<div class="col-3 col-md-2">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/advantage-guarantee-ico.svg" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facades/icon-3.svg" class="img-fluid">
 							</div>
 							<div class="col-9 col-md-10">
-								<h3 class="advantage-title text-start">Гарантия 2 года</h3>
-								<p class="text-start">Мы даем максимальную гарантию на услуги по покраске, т.к. уверены в профессионализме своих сотрудников и используемых материалах.</p>
+								<h3 class="advantage-title text-start">Вариативность</h3>
+								<p class="text-start">Применяем различные варианты окрашивания по желанию заказчика</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-6 mb-4">
 						<div class="row">
 							<div class="col-3 col-md-2">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/section-advantage-ico.svg" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facades/icon-4.svg" class="img-fluid">
 							</div>
 							<div class="col-9 col-md-10">
-								<h3 class="advantage-title text-start">Профессиональная обработка дерева</h3>
-								<p class="text-start">Помимо покраски у нас возможно: покрытие лаком, тонировка, полировка, патинирование и изготовление новых фасадов.</p>
+								<h3 class="advantage-title text-start">Сниженные цены</h3>
+								<p class="text-start">Предоставляем вам скидки на крупные заказы</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 mb-4">
+						<div class="row">
+							<div class="col-3 col-md-2">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facades/icon-5.svg" class="img-fluid">
+							</div>
+							<div class="col-9 col-md-10">
+								<h3 class="advantage-title text-start">Скорость</h3>
+								<p class="text-start">Сдаем работу в заранее оговоренные сроки</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-
-<div class="Mb_back"></div>
-
-<section class="gradient-order-section bg-light" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/gradient-order-section-bg-wh.jpg); padding-top: 85px; padding-bottom: 84px;">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-5 text-md-end">
-				<h2 class="calcul" style="color: #323232;">Рассчитаем стоимость по фото за 15 минут</h2>
-				<p class="section-description archive-portfolio mb-3" style="color: #323232;"> Для расчета присылайте фото или видео с комментариями нам в мессенджер или через форму на сайте. Ответим на вопросы о покраске.</p>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/section-title-dec.svg" style="margin-bottom: 60px;">
-				<br>
-				<a href="#" type="button" class="btn btn-lg btn-corporate-color-1" data-bs-toggle="modal" data-bs-target="#calculatePriceWithDownloadModal">Рассчитать стоимость</a>
-				<div class="d-flex calcul_mess justify-content-md-end" style="margin-top: 40px;">
-					<a class="nav-link ico-button" href="https://t.me/+79361385058" style="margin-right: 20px;">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
-					</a>
-					<a class="nav-link ico-button" href="https://wa.me/79361385058?web=1&app_absent=1" style="margin-right: 20px;">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
-					</a>
-					<a class="nav-link ico-button" href="https://max.ru/u/f9LHodD0cOIaPC-JT3CO_gR8lX_0r8w8ZdryldFEBqfWiLtrMWwQNmVViZk">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/max.svg">
-					</a>
-				</div>
-			</div>
-			<div class="col-md-7"></div>
 		</div>
 	</div>
 </section>
