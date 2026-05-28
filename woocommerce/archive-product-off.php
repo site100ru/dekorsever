@@ -58,7 +58,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 col-lg-3 mb-2 mb-md-0">
 						<div class="row align-items-center">
 							<div class="col-2 col-md-3">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/arounded-advantage-3.png">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/arounded-advantage-3.png">
 							</div>
 							<div class="col-10 col-md-9">
 								<h3 class="text-light mb-0">Собственное производство</h3>
@@ -69,7 +69,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 col-lg-3 mb-2 mb-md-0">
 						<div class="row align-items-center">
 							<div class="col-2 col-md-3">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/arounded-advantage-2.png">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/arounded-advantage-2.png">
 							</div>
 							<div class="col-10 col-md-9">
 								<h3 class="text-light mb-0">Рассрочка 0%</h3>
@@ -80,7 +80,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 col-lg-3 mb-2 mb-md-0">
 						<div class="row align-items-center">
 							<div class="col-2 col-md-3">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/arounded-advantage-1.png">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/arounded-advantage-1.png">
 							</div>
 							<div class="col-10 col-md-9">
 								<h3 class="text-light mb-0">Бесплатный замер</h3>
@@ -91,7 +91,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 col-lg-3 mb-md-0">
 						<div class="row align-items-center">
 							<div class="col-2 col-md-3">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/arounded-advantage-4.png">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/arounded-advantage-4.png">
 							</div>
 							<div class="col-10 col-md-9">
 								<h3 class="text-light mb-0">Монтаж с гарантией</h3>
@@ -173,7 +173,7 @@ do_action( 'woocommerce_before_main_content' );
 								$term = get_term_by( 'id', $child, $tax_name );
 
 								echo '<li class="nav-item d-none d-xl-inline">
-									<span class="nav-link px-1"><img src="'.get_template_directory_uri().'/img/ico/menu-point.png"></span>
+									<span class="nav-link px-1"><img src="'.get_stylesheet_directory_uri().'/img/ico/menu-point.png"></span>
 								</li>';
 								echo '<li class="nav-item"><a class="nav-link" href="' . get_term_link( $term ) . '">' . esc_html( $term->name ) . '</a></li>';
 							}
@@ -242,7 +242,7 @@ do_action( 'woocommerce_before_main_content' );
 							}
 							
 							echo '<li class="nav-item d-none d-xl-inline">
-									<span class="nav-link px-1"><img src="'.get_template_directory_uri().'/img/ico/menu-point.png"></span>
+									<span class="nav-link px-1"><img src="'.get_stylesheet_directory_uri().'/img/ico/menu-point.png"></span>
 								</li>';
 							echo '<li class="nav-item"><a class="nav-link'.$active.'" href="' . get_term_link( $term ) . '">' . esc_html( $term->name ) . '</a></li>';
 						}
@@ -479,10 +479,10 @@ do_action( 'woocommerce_before_main_content' );
 						?>
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/ico/arrow-left.png">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/arrow-left.png">
 					</button>
 					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/ico/arrow-right.png">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/arrow-right.png">
 					</button>
 				</div>
 			</div>
@@ -512,7 +512,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 mb-5">
 						<div class="row">
 							<div class="col-2 text-center">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/advantage-1.png" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/advantage-1.png" class="img-fluid">
 							</div>
 							<div class="col-10">
 								<h3>Собственное производство</h3>
@@ -523,7 +523,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 mb-5">
 						<div class="row">
 							<div class="col-2 text-center">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/advantage-9.png" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/advantage-9.png" class="img-fluid">
 							</div>
 							<div class="col-10">
 								<h3>Бесплатный замер</h3>
@@ -534,7 +534,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 mb-5">
 						<div class="row">
 							<div class="col-2 text-center">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/advantage-3.png" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/advantage-3.png" class="img-fluid">
 							</div>
 							<div class="col-10">
 								<h3>Европейское качество</h3>
@@ -545,7 +545,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 mb-5">
 						<div class="row">
 							<div class="col-2 text-center">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/advantage-8.png" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/advantage-8.png" class="img-fluid">
 							</div>
 							<div class="col-10">
 								<h3>Доставляем и устанавливаем</h3>
@@ -556,7 +556,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 mb-5">
 						<div class="row">
 							<div class="col-2 text-center">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/advantage-5.png" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/advantage-5.png" class="img-fluid">
 							</div>
 							<div class="col-10">
 								<h3>Рассрочка 0%</h3>
@@ -567,15 +567,15 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 mb-5">
 						<div class="row">
 							<div class="col-2 text-center">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/advantage-6.png" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/advantage-6.png" class="img-fluid">
 							</div>
 							<div class="col-10">
 								<h3>Удобная оплата</h3>
 								<ul class="mb-0 text-orange ps-0" style="">
-									<li style="line-height: 24px;"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png" class="me-2">Банковской картой на замере (по банковскому терминалу)</li>
-									<li style="line-height: 24px;"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png" class="me-2">Наличными </li>
-									<li style="line-height: 24px;"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png" class="me-2">Онлайн</li>
-									<li style="line-height: 24px;"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png" class="me-2">Безналичный расчет</li>
+									<li style="line-height: 24px;"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/menu-point.png" class="me-2">Банковской картой на замере (по банковскому терминалу)</li>
+									<li style="line-height: 24px;"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/menu-point.png" class="me-2">Наличными </li>
+									<li style="line-height: 24px;"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/menu-point.png" class="me-2">Онлайн</li>
+									<li style="line-height: 24px;"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/menu-point.png" class="me-2">Безналичный расчет</li>
 								</ul>
 							</div>
 						</div>
@@ -583,7 +583,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 mb-5 mb-md-0">
 						<div class="row">
 							<div class="col-2 text-center">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/advantage-7.png" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/advantage-7.png" class="img-fluid">
 							</div>
 							<div class="col-10">
 								<h3>Большой выбор готовой продукции и материалов</h3>
@@ -594,7 +594,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 mb-0">
 						<div class="row">
 							<div class="col-2 text-center">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/advantage-10.png" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/advantage-10.png" class="img-fluid">
 							</div>
 							<div class="col-10">
 								<h3>Регулярные акции и подарки</h3>

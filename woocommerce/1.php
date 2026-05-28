@@ -61,7 +61,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 col-lg-3 mb-2 mb-md-0">
 						<div class="row align-items-center">
 							<div class="col-2 col-md-3">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/arounded-advantage-3.png">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/arounded-advantage-3.png">
 							</div>
 							<div class="col-10 col-md-9">
 								<h3 class="text-light mb-0">Собственное производство</h3>
@@ -72,7 +72,7 @@ do_action( 'woocommerce_before_main_content' );
 					<!--div class="col-md-6 col-lg-3 mb-2 mb-md-0">
 						<div class="row align-items-center">
 							<div class="col-2 col-md-3">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/arounded-advantage-2.png">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/arounded-advantage-2.png">
 							</div>
 							<div class="col-10 col-md-9">
 								<h3 class="text-light mb-0">Рассрочка 0%</h3>
@@ -83,7 +83,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 col-lg-3 mb-2 mb-md-0">
 						<div class="row align-items-center">
 							<div class="col-2 col-md-3">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/arounded-advantage-1.png">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/arounded-advantage-1.png">
 							</div>
 							<div class="col-10 col-md-9">
 								<h3 class="text-light mb-0">Бесплатный замер</h3>
@@ -94,7 +94,7 @@ do_action( 'woocommerce_before_main_content' );
 					<div class="col-md-6 col-lg-3 mb-md-0">
 						<div class="row align-items-center">
 							<div class="col-2 col-md-3">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/arounded-advantage-4.png">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/arounded-advantage-4.png">
 							</div>
 							<div class="col-10 col-md-9">
 								<h3 class="text-light mb-0">Монтаж с гарантией</h3>
@@ -170,7 +170,7 @@ do_action( 'woocommerce_before_main_content' );
 						<?php
 							foreach ($categories as $category) { ?>
 								<li class="nav-item d-none d-xl-inline">
-									<span class="nav-link px-1"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png"></span>
+									<span class="nav-link px-1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/menu-point.png"></span>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="<?php echo get_term_link($category->term_id); ?>"><?php echo $category->name; ?></a>
@@ -221,31 +221,31 @@ do_action( 'woocommerce_before_main_content' );
 							<a class="nav-link ps-0<?php if ( isset( $_GET[ 'готовые-кухни' ] ) ) { echo ' active'; }?>" href="archive-product.html">Все кухни</a> <!--aria-current="page"-->
 						</li>
 						<li class="nav-item d-none d-xl-inline">
-							<span class="nav-link px-1"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png"></span>
+							<span class="nav-link px-1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/menu-point.png"></span>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="archive-product.html">Прямые</a>
 						</li>
 						<li class="nav-item d-none d-xl-inline">
-							<span class="nav-link px-1"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png"></span>
+							<span class="nav-link px-1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/menu-point.png"></span>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="archive-product.html">Угловые</a>
 						</li>
 						<li class="nav-item d-none d-xl-inline">
-							<span class="nav-link px-1"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png"></span>
+							<span class="nav-link px-1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/menu-point.png"></span>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="archive-product.html">П-образные</a>
 						</li>
 						<li class="nav-item d-none d-xl-inline">
-							<span class="nav-link px-1"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png"></span>
+							<span class="nav-link px-1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/menu-point.png"></span>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="archive-product.html">С барной стойкой</a>
 						</li>
 						<li class="nav-item d-none d-xl-inline">
-							<span class="nav-link px-1"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png"></span>
+							<span class="nav-link px-1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/menu-point.png"></span>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link pe-0" href="archive-product.html">С островком</a>
@@ -253,7 +253,7 @@ do_action( 'woocommerce_before_main_content' );
 					</ul>
 				</div>
 				<div class="d-md-none text-center mb-4">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/left-right-finger.png" style="opacity: 1; max-width: 25px;">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/left-right-finger.png" style="opacity: 1; max-width: 25px;">
 				</div>
 				<div class="row">
 					

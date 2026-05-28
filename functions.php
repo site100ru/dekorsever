@@ -292,7 +292,7 @@
 						echo '<a href="' . esc_url( get_term_link( $term ) ) . '" class="nav-link active">'.$term->name.'</a>';
 					echo '</li>';
 					echo '<li class="nav-item d-none d-xl-inline">';
-						echo '<span class="nav-link px-1"><img src="'.get_template_directory_uri().'/img/ico/menu-point.png"></span>';
+						echo '<span class="nav-link px-1"><img src="'.get_stylesheet_directory_uri().'/img/ico/menu-point.png"></span>';
 					echo '</li>';
 				}
 
@@ -304,148 +304,6 @@
 	
 	add_action( 'woocommerce_before_shop_loop', 'tutsplus_product_subcategories', 50 );
 	*/
-	
-	
-	
-	
-	// Register taxonomy
-	add_action( 'init', 'create_taxonomy' );
-	function create_taxonomy() {
-		
-		// Таксономия - портфолио
-		register_taxonomy( 'portfolio-cat', [ 'portfolio' ], [
-			'label'                 => '', // определяется параметром $labels->name
-			'labels'                => [
-				'name'              => 'Наши работы',
-				'singular_name'     => 'Категория портфолио',
-				'search_items'      => 'Искать категорию портфолио',
-				'all_items'         => 'Все категории портфолио',
-				'view_item '        => 'View Genre',
-				'parent_item'       => 'Parent Genre',
-				'parent_item_colon' => 'Parent Genre:',
-				'edit_item'         => 'Edit Genre',
-				'update_item'       => 'Update Genre',
-				'add_new_item'      => 'Add New Genre',
-				'new_item_name'     => 'New Genre Name',
-				'menu_name'         => 'Категории портфолио',
-				'back_to_items'     => '← Вернуться к категориям портфолио',
-			],
-			'description'           => '', // описание таксономии
-			'public'                => true,
-			// 'publicly_queryable'    => null, // равен аргументу public
-			// 'show_in_nav_menus'     => true, // равен аргументу public
-			// 'show_ui'               => true, // равен аргументу public
-			// 'show_in_menu'          => true, // равен аргументу show_ui
-			// 'show_tagcloud'         => true, // равен аргументу show_ui
-			// 'show_in_quick_edit'    => null, // равен аргументу show_ui
-			'hierarchical'          => true,
-			'rewrite'               => true,
-			//'query_var'             => $taxonomy, // название параметра запроса
-			'capabilities'          => array(),
-			'meta_box_cb'           => null, // html метабокса. callback: `post_categories_meta_box` или `post_tags_meta_box`. false — метабокс отключен.
-			'show_admin_column'     => false, // авто-создание колонки таксы в таблице ассоциированного типа записи. (с версии 3.5)
-			'show_in_rest'          => null, // добавить в REST API
-			'rest_base'             => null, // $taxonomy
-			// '_builtin'              => false,
-			//'update_count_callback' => '_update_post_term_count',
-		] );
-	}
-	
-	
-	// Register post type
-	add_action( 'init', 'register_post_types' );
-	function register_post_types() {
-		
-		// Add thumbnails
-		add_theme_support('post-thumbnails');
-		
-		// Тип записи - наши работы (портфолио)
-		register_post_type( 'portfolio', [
-			'label'  => null,
-			'labels' => [
-				'name'               => 'Наши работы', // основное название для типа записи
-				'singular_name'      => 'Наши работы', // название для одной записи этого типа
-				'add_new'            => 'Добавить нашу работу', // для добавления новой записи
-				'add_new_item'       => 'Добавление нашей работы', // заголовка у вновь создаваемой записи в админ-панели.
-				'edit_item'          => 'Редактирование нашей работы', // для редактирования типа записи
-				'new_item'           => 'Новая наша работа', // текст новой записи
-				'view_item'          => 'Смотреть нашу работу', // для просмотра записи этого типа.
-				'search_items'       => 'Искать нашу работу', // для поиска по этим типам записи
-				'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
-				'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
-				'parent_item_colon'  => '', // для родителей (у древовидных типов)
-				'menu_name'          => 'Наши работы', // название меню
-			],
-			'description'         => '',
-			'public'              => true,
-			// 'publicly_queryable'  => null, // зависит от public
-			// 'exclude_from_search' => null, // зависит от public
-			// 'show_ui'             => null, // зависит от public
-			// 'show_in_nav_menus'   => null, // зависит от public
-			'show_in_menu'        => null, // показывать ли в меню адмнки
-			// 'show_in_admin_bar'   => null, // зависит от show_in_menu
-			'show_in_rest'        => null, // добавить в REST API. C WP 4.7
-			'rest_base'           => null, // $post_type. C WP 4.7
-			'menu_position'       => null,
-			'menu_icon'           => null,
-			//'capability_type'   => 'post',
-			//'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
-			//'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
-			'hierarchical'        => false,
-			'supports'            => [ 'title', 'editor' ], // 'title','editor','author','trackbacks','comments', 'thumbnail', 'custom-fields','revisions','page-attributes','post-formats', 'excerpt'
-			'taxonomies'          => [ 'portfolio-cat' ],
-			'has_archive'         => true,
-			'rewrite'             => true,
-			'query_var'           => true,
-		] );
-	}
-	
-	
-	
-	
-	
-	// Подключаем функцию активации мета блока (my_extra_fields)
-	add_action('add_meta_boxes', 'my_extra_fields', 1);
-
-	function my_extra_fields() {
-		add_meta_box( 'extra_fields', 'Галерея наших работ', 'extra_fields_box_func', 'portfolio', 'side', 'high' );
-	}
-	
-	// Код блока галереи
-	function extra_fields_box_func( $post ) {
-		for ($i=1; $i<=9; $i++) { ?>
-			<label>URL&#160;изображения <?php echo $i; ?>:</label>
-			<input type="text" name="extra[img-<?php echo $i; ?>]" value="<?php echo get_post_meta($post->ID, '_img-'.$i, 1); ?>" style="width: 100%;">
-			<div style="clear: both;"></div>
-		<?php } ?>
-			<input type="hidden" name="extra_fields_nonce" value="<?php echo wp_create_nonce(__FILE__); ?>" />
-		<?php
-	} 
-	
-	// включаем обновление полей при сохранении
-	add_action( 'save_post', 'my_extra_fields_update', 0 );
-
-    function my_extra_fields_update( $post_id ){
-		// базовая проверка
-		if (
-			   empty( $_POST['extra'] )
-			|| ! wp_verify_nonce( $_POST['extra_fields_nonce'], __FILE__ )
-			|| wp_is_post_autosave( $post_id )
-			|| wp_is_post_revision( $post_id )
-		)
-			return false;
-
-		// Все ОК! Теперь, нужно сохранить/удалить данные
-		//$_POST['extra'] = array_map( 'sanitize_text_field', $_POST['extra'] ); // чистим все данные от пробелов по краям
-		foreach( $_POST['extra'] as $key => $value ){
-			if( empty($value) ){
-				delete_post_meta( $post_id, '_'.$key ); // удаляем поле если значение пустое
-				continue;
-			}
-			update_post_meta( $post_id, '_'.$key, $value ); // add_post_meta() работает автоматически
-		}
-		return $post_id;
-	} 
 	
 	
 	/* Добавляем дополнительные поля к имеющимуся типу записи page */
@@ -520,483 +378,185 @@
 	
 	
 	/*** ДОБАВЛЯЕМ ВОЗМОЖНОСТЬ В НАСТРОЙКАХ ТЕМЫ ДОБАВИТЬ КОНТАКТЫ И КОД СЧЕТЧИКА ***/
-	function mytheme_customize_register( $wp_customize ) {
-		// Добавляем секцию
-		$wp_customize->add_section( 'mytheme_analytics', array(
-			'title'    => 'Аналитика и счетчики',
-			'priority' => 200,
-		));
+	function dekorsever_customize_register($wp_customize)
+	{
+		/* SMTP настройки */
+		$wp_customize->add_section("mytheme_smtp", [
+			"title" => "SMTP (настройки отправки почты)",
+			"priority" => 202,
+		]);
 
-		// Поле для кода счетчика (head)
-		$wp_customize->add_setting( 'mytheme_counter_head', array(
-			'default'   => '',
-			'transport' => 'postMessage',
-		));
+		$wp_customize->add_setting("mytheme_smtp_host", [
+			"default" => "smtp.yandex.ru",
+			"transport" => "postMessage",
+			"sanitize_callback" => "sanitize_text_field",
+		]);
+		$wp_customize->add_control("mytheme_smtp_host", [
+			"label" => "SMTP хост",
+			"description" => "Например: smtp.yandex.ru или smtp.gmail.com",
+			"section" => "mytheme_smtp",
+			"type" => "text",
+		]);
 
-		$wp_customize->add_control( 'mytheme_counter_head', array(
-			'label'       => 'Код счетчика (в <head>)',
-			'description' => 'Вставьте код, который должен быть в <head> (например, Google Analytics, Meta Pixel)',
-			'section'     => 'mytheme_analytics',
-			'type'        => 'textarea',
-		));
+		$wp_customize->add_setting("mytheme_smtp_port", [
+			"default" => "465",
+			"transport" => "postMessage",
+			"sanitize_callback" => "absint",
+		]);
+		$wp_customize->add_control("mytheme_smtp_port", [
+			"label" => "SMTP порт",
+			"description" => "465 — SSL, 587 — TLS",
+			"section" => "mytheme_smtp",
+			"type" => "text",
+		]);
 
-		// Поле для кода счетчика (body)
-		$wp_customize->add_setting( 'mytheme_counter_body', array(
-			'default'   => '',
-			'transport' => 'postMessage',
-		));
+		$wp_customize->add_setting("mytheme_smtp_username", [
+			"default" => "",
+			"transport" => "postMessage",
+			"sanitize_callback" => "sanitize_email",
+		]);
+		$wp_customize->add_control("mytheme_smtp_username", [
+			"label" => "SMTP логин (email отправителя)",
+			"description" => "С этого адреса будут уходить письма",
+			"section" => "mytheme_smtp",
+			"type" => "text",
+		]);
 
-		$wp_customize->add_control( 'mytheme_counter_body', array(
-			'label'       => 'Код счетчика (перед </body>)',
-			'description' => 'Вставьте код, который должен быть перед закрывающим тегом </body> (например, Яндекс.Метрика)',
-			'section'     => 'mytheme_analytics',
-			'type'        => 'textarea',
-		));
+		$wp_customize->add_setting("mytheme_smtp_password", [
+			"default" => "",
+			"transport" => "postMessage",
+			"sanitize_callback" => "sanitize_text_field",
+		]);
+		$wp_customize->add_control("mytheme_smtp_password", [
+			"label" => "SMTP пароль",
+			"section" => "mytheme_smtp",
+			"type" => "text",
+		]);
 
-        /* SMTP настройки */
-        $wp_customize->add_section('mytheme_smtp', array(
-            'title'    => 'SMTP (настройки отправки почты)',
-            'priority' => 202,
-        ));
+		$wp_customize->add_setting("mytheme_smtp_from_name", [
+			"default" => "",
+			"transport" => "postMessage",
+			"sanitize_callback" => "sanitize_text_field",
+		]);
+		$wp_customize->add_control("mytheme_smtp_from_name", [
+			"label" => "Имя отправителя",
+			"description" => "Например: Декор-Север",
+			"section" => "mytheme_smtp",
+			"type" => "text",
+		]);
 
-        $wp_customize->add_setting('mytheme_smtp_host', array(
-            'default'   => 'smtp.yandex.ru',
-            'transport' => 'postMessage',
-            'sanitize_callback' => 'sanitize_text_field',
-        ));
-        $wp_customize->add_control('mytheme_smtp_host', array(
-            'label'       => 'SMTP хост',
-            'description' => 'Например: smtp.yandex.ru или smtp.gmail.com',
-            'section'     => 'mytheme_smtp',
-            'type'        => 'text',
-        ));
+		// Добавляем секцию «Время работы»
+		$wp_customize->add_section("mytheme_contacts_job_time", [
+			"title" => "Время работы",
+			"panel" => "contact_panel", // Используем панель из родительской темы
+			"priority" => 5,
+		]);
 
-        $wp_customize->add_setting('mytheme_smtp_port', array(
-            'default'   => '465',
-            'transport' => 'postMessage',
-            'sanitize_callback' => 'absint',
-        ));
-        $wp_customize->add_control('mytheme_smtp_port', array(
-            'label'       => 'SMTP порт',
-            'description' => '465 — SSL, 587 — TLS',
-            'section'     => 'mytheme_smtp',
-            'type'        => 'text',
-        ));
+		// Добавляем поле для ввода времени работы
+		$wp_customize->add_setting("mytheme_job_time", [
+			"default" => "",
+			"transport" => "postMessage",
+		]);
 
-        $wp_customize->add_setting('mytheme_smtp_username', array(
-            'default'   => '',
-            'transport' => 'postMessage',
-            'sanitize_callback' => 'sanitize_email',
-        ));
-        $wp_customize->add_control('mytheme_smtp_username', array(
-            'label'       => 'SMTP логин (email отправителя)',
-            'description' => 'С этого адреса будут уходить письма',
-            'section'     => 'mytheme_smtp',
-            'type'        => 'text',
-        ));
-
-        $wp_customize->add_setting('mytheme_smtp_password', array(
-            'default'   => '',
-            'transport' => 'postMessage',
-            'sanitize_callback' => 'sanitize_text_field',
-        ));
-        $wp_customize->add_control('mytheme_smtp_password', array(
-            'label'       => 'SMTP пароль',
-            'section'     => 'mytheme_smtp',
-            'type'        => 'text',
-        ));
-
-        $wp_customize->add_setting('mytheme_smtp_from_name', array(
-            'default'   => '',
-            'transport' => 'postMessage',
-            'sanitize_callback' => 'sanitize_text_field',
-        ));
-        $wp_customize->add_control('mytheme_smtp_from_name', array(
-            'label'       => 'Имя отправителя',
-            'description' => 'Например: Декор-Север',
-            'section'     => 'mytheme_smtp',
-            'type'        => 'text',
-        ));
-		
-		/** ИСПОЛЬЗУЕМ ВЛОЖЕННЫЕ КОНТЕЙНЕРЫ **/
-		/* КОНТАКТЫ */
-		// Создаем панель (родительский контейнер)
-		$wp_customize->add_panel( 'contact_panel', array(
-			'title'       => 'Контакты',
-			'description' => 'Описание контактов',
-			'priority'    => 205, // Чем меньше, тем выше в списке
-		) );
-		
-			// Добавляем первую вложенную секцию (Основной номер телефона)
-			$wp_customize->add_section( 'mytheme_contacts', array( 
-				'title'    => 'Основной номер телефона',
-				'panel'    => 'contact_panel', // Указываем родительскую панель
-				'priority' => 5
-			));
-		
-				// Добавляем поле для ввода КОДА СТРАНЫ основного номера телефона
-				$wp_customize->add_setting( 'mytheme_main_phone_country_code', array(
-					'default'   => '',
-					'transport' => 'postMessage',
-				));
-			
-				$wp_customize->add_control( 'mytheme_main_phone_country_code', array(
-					'label'       => 'Код страны',
-					'description' => 'Например: 8 или +7',
-					'section'     => 'mytheme_contacts',
-					'type'        => 'input',
-					'input_attrs' => array(
-						'placeholder' => '',
-						'style'      => 'width: 60px; display: inline-block;', // Уменьшаем ширину и делаем в одну строку
-					)
-				));
-		
-				// Добавляем поле для ввода КОДА РЕГИОНА основного номера телефона
-				$wp_customize->add_setting( 'mytheme_main_phone_region_code', array(
-					'default'   => '',
-					'transport' => 'postMessage',
-				));
-			
-				$wp_customize->add_control( 'mytheme_main_phone_region_code', array(
-					'label'       => 'Код региона',
-					'description' => 'Например: 800, без скобок',
-					'section'     => 'mytheme_contacts',
-					'type'        => 'input',
-					'input_attrs' => array(
-						'placeholder' => '',
-						'style'      => 'width: 60px; display: inline-block;', // Уменьшаем ширину и делаем в одну строку
-					)
-				));
-		
-				// Добавляем поле для ввода основного НОМЕРА ТЕЛЕФОНА
-				$wp_customize->add_setting( 'mytheme_main_phone_number', array(
-					'default'   => '',
-					'transport' => 'postMessage',
-				));
-				
-				$wp_customize->add_control( 'mytheme_main_phone_number', array(
-					'label'       => 'Номер телефона',
-					'description' => 'Например: 880-80-88',
-					'section'     => 'mytheme_contacts',
-					'type'        => 'input',
-					'input_attrs' => array(
-						'placeholder' => '',
-						'style'      => 'width: 100px; display: inline-block;', // Уменьшаем ширину и делаем в одну строку
-					)
-				));
-				
-				
-			// Добавляем вложенную секцию ДОПОЛНИТЕЛЬНОГО НОМЕРА ТЕЛЕФОНА
-			$wp_customize->add_section( 'additional_phone_number', array( 
-				'title'    => 'Дополнительный номер телефона',
-				'panel'    => 'contact_panel', // Указываем родительскую панель
-				'priority' => 5
-			));
-		
-				/* Добавляем поле для ввода КОДА СТРАНЫ дополнительного номера телефона */
-				$wp_customize->add_setting( 'additional_phone_country_code', array(
-					'default'   => '',
-					'transport' => 'postMessage',
-				));
-			
-				$wp_customize->add_control( 'additional_phone_country_code', array(
-					'label'       => 'Код страны',
-					'description' => 'Например: 8 или +7',
-					'section'     => 'additional_phone_number',
-					'type'        => 'input',
-					'input_attrs' => array(
-						'placeholder' => '',
-						'style'      => 'width: 60px; display: inline-block;', // Уменьшаем ширину и делаем в одну строку
-					)
-				));
-		
-				/* Добавляем поле для ввода КОДА РЕГИОНА дополнительного номера телефона */
-				$wp_customize->add_setting( 'additional_phone_region_code', array(
-					'default'   => '',
-					'transport' => 'postMessage',
-				));
-			
-				$wp_customize->add_control( 'additional_phone_region_code', array(
-					'label'       => 'Код региона',
-					'description' => 'Например: 800, без скобок',
-					'section'     => 'additional_phone_number',
-					'type'        => 'input',
-					'input_attrs' => array(
-						'placeholder' => '',
-						'style'      => 'width: 60px; display: inline-block;', // Уменьшаем ширину и делаем в одну строку
-					)
-				));
-		
-				// Добавляем поле для ввода дополнительного НОМЕРА ТЕЛЕФОНА
-				$wp_customize->add_setting( 'additional_phone_number', array(
-					'default'   => '',
-					'transport' => 'postMessage',
-				));
-				
-				$wp_customize->add_control( 'additional_phone_number', array(
-					'label'       => 'Номер телефона',
-					'description' => 'Например: 880-80-88',
-					'section'     => 'additional_phone_number',
-					'type'        => 'input',
-					'input_attrs' => array(
-						'placeholder' => '',
-						'style'      => 'width: 100px; display: inline-block;', // Уменьшаем ширину и делаем в одну строку
-					)
-				));
-		
-		
-			// Добавляем вторую вложенную секцию (Email)
-			$wp_customize->add_section( 'mytheme_contacts_email', array( 
-				'title'    => 'Email',
-				'panel'    => 'contact_panel', // Указываем родительскую панель
-				'priority' => 5
-			));
-		
-				// Добавляем поле для ввода email
-				$wp_customize->add_setting( 'mytheme_email', array(
-					'default'   => '',
-					'transport' => 'postMessage',
-				));
-				
-				$wp_customize->add_control( 'mytheme_email', array(
-					'label'       => 'Email',
-					//'description' => 'Например: 8 или +7',
-					'section'     => 'mytheme_contacts_email',
-					'type'        => 'input',
-					'input_attrs' => array(
-						'placeholder' => '',
-						//'style'      => 'width: 60px; display: inline-block;', // Уменьшаем ширину и делаем в одну строку
-					)
-				));
-
-            /* ДОПОЛНИТЕЛЬНЫЕ EMAIL (повторитель) */
-            $wp_customize->add_section('mytheme_contacts_emails_extra', array(
-                'title' => 'Дополнительные почты для приема писем',
-                'panel' => 'contact_panel',
-                'priority' => 5
-            ));
-
-            $wp_customize->add_setting('mytheme_emails_extra_json', array(
-                'default' => '',
-                'transport' => 'postMessage',
-                'sanitize_callback' => 'sanitize_text_field',
-            ));
-
-            $wp_customize->add_control(new Mytheme_Email_Repeater_Control(
-                $wp_customize,
-                'mytheme_emails_extra_json',
-                array(
-                    'label' => 'Дополнительные Email адреса',
-                    'description' => 'Добавьте дополнительные email адреса для приема почты. Можно добавить несколько.',
-                    'section' => 'mytheme_contacts_emails_extra',
-                )
-            ));
-				
-				
-			// Добавляем вложенную секцию для Telegram
-			$wp_customize->add_section( 'mytheme_contacts_telegram', array( 
-				'title'    => 'Telegram',
-				'panel'    => 'contact_panel', // Указываем родительскую панель
-				'priority' => 5
-			));
-		
-				// Добавляем поле для ввода Telegram
-				$wp_customize->add_setting( 'mytheme_telegram', array(
-					'default'   => '',
-					'transport' => 'postMessage',
-				));
-				
-				$wp_customize->add_control( 'mytheme_telegram', array(
-					'label'       => 'Telegram',
-					'description' => 'Укажите ссылку на Telegram',
-					'section'     => 'mytheme_contacts_telegram',
-					'type'        => 'input',
-					'input_attrs' => array(
-						'placeholder' => '',
-						//'style'      => 'width: 60px; display: inline-block;', // Уменьшаем ширину и делаем в одну строку
-					)
-				));
-		
-		
-			// Добавляем третью вложенную секцию (Whatsapp)
-			$wp_customize->add_section( 'mytheme_contacts_whatsapp', array( 
-				'title'    => 'Whatsapp',
-				'panel'    => 'contact_panel', // Указываем родительскую панель
-				'priority' => 5
-			));
-		
-				// Добавляем поле для ввода whatsapp
-				$wp_customize->add_setting( 'mytheme_whatsapp', array(
-					'default'   => '',
-					'transport' => 'postMessage',
-				));
-				
-				$wp_customize->add_control( 'mytheme_whatsapp', array(
-					'label'       => 'Whatsapp',
-					'description' => 'Укажите ссылку на Whatsapp',
-					'section'     => 'mytheme_contacts_whatsapp',
-					'type'        => 'input',
-					'input_attrs' => array(
-						'placeholder' => '',
-						//'style'      => 'width: 60px; display: inline-block;', // Уменьшаем ширину и делаем в одну строку
-					)
-				));
-			
-			
-			// Добавляем секцию Вконтакте
-			$wp_customize->add_section( 'mytheme_contacts_vk', array( 
-				'title'    => 'Вконтакте',
-				'panel'    => 'contact_panel', // Указываем родительскую панель
-				'priority' => 5
-			));
-		
-				// Добавляем поле для ввода Вконтакте
-				$wp_customize->add_setting( 'mytheme_vk', array(
-					'default'   => '',
-					'transport' => 'postMessage',
-				));
-				
-				$wp_customize->add_control( 'mytheme_vk', array(
-					'label'       => 'Вконтакте',
-					'description' => 'Укажите ссылку на Вконтакте',
-					'section'     => 'mytheme_contacts_vk',
-					'type'        => 'input'
-				));
-				
-				
-			// Добавляем секцию Адрес
-			$wp_customize->add_section( 'mytheme_contacts_address', array( 
-				'title'    => 'Адрес',
-				'panel'    => 'contact_panel', // Указываем родительскую панель
-				'priority' => 5
-			));
-		
-				// Добавляем поле для ввода Вконтакте
-				$wp_customize->add_setting( 'mytheme_address', array(
-					'default'   => '',
-					'transport' => 'postMessage',
-				));
-				
-				$wp_customize->add_control( 'mytheme_address', array(
-					'label'       => 'Адрес',
-					'description' => 'Укажите адрес организации',
-					'section'     => 'mytheme_contacts_address',
-					'type'        => 'input'
-				));
-				
-				
-			// Добавляем секцию «Время работы»
-			$wp_customize->add_section( 'mytheme_contacts_job_time', array( 
-				'title'    => 'Время работы',
-				'panel'    => 'contact_panel', // Указываем родительскую панель
-				'priority' => 5
-			));
-		
-				// Добавляем поле для ввода Вконтакте
-				$wp_customize->add_setting( 'mytheme_job_time', array(
-					'default'   => '',
-					'transport' => 'postMessage',
-				));
-				
-				$wp_customize->add_control( 'mytheme_job_time', array(
-					'label'       => 'Время работы',
-					'description' => 'Укажите время работы',
-					'section'     => 'mytheme_contacts_job_time',
-					'type'        => 'input'
-				));
-		/** ИСПОЛЬЗУЕМ ВЛОЖЕННЫЕ КОНТЕЙНЕРЫ **/
+		$wp_customize->add_control("mytheme_job_time", [
+			"label" => "Время работы",
+			"description" => "Укажите время работы",
+			"section" => "mytheme_contacts_job_time",
+			"type" => "input",
+		]);
 	}
-	add_action( 'customize_register', 'mytheme_customize_register' );
+	add_action("customize_register", "dekorsever_customize_register");
 	/*** END ДОБАВЛЯЕМ ВОЗМОЖНОСТЬ В НАСТРОЙКАХ ТЕМЫ ДОБАВИТЬ КОНТАКТЫ И КОД СЧЕТЧИКА ***/
-	
 
-    /**
-     * Получить SMTP-конфиг из настроек темы
-     */
-    function mytheme_get_smtp_config() {
-        return array(
-            'host'      => get_theme_mod('mytheme_smtp_host', 'smtp.yandex.ru'),
-            'port'      => (int) get_theme_mod('mytheme_smtp_port', 465),
-            'username'  => get_theme_mod('mytheme_smtp_username', ''),
-            'password'  => get_theme_mod('mytheme_smtp_password', ''),
-            'from_name' => get_theme_mod('mytheme_smtp_from_name', get_bloginfo('name')),
-        );
-    }
+	/**
+	 * Получить SMTP-конфиг из настроек темы
+	 */
+	function mytheme_get_smtp_config()
+	{
+		return [
+			"host" => get_theme_mod("mytheme_smtp_host", "smtp.yandex.ru"),
+			"port" => (int) get_theme_mod("mytheme_smtp_port", 465),
+			"username" => get_theme_mod("mytheme_smtp_username", ""),
+			"password" => get_theme_mod("mytheme_smtp_password", ""),
+			"from_name" => get_theme_mod(
+				"mytheme_smtp_from_name",
+				get_bloginfo("name"),
+			),
+		];
+	}
 
-    function mytheme_get_recipients() {
-        $recipients = array();
+	function mytheme_get_recipients()
+	{
+		$recipients = [];
 
-        $main = get_theme_mod('mytheme_email', '');
-        if (!empty($main)) {
-            $recipients[] = $main;
-        }
+		$main = get_theme_mod("mytheme_email", "");
+		if (!empty($main)) {
+			$recipients[] = $main;
+		}
 
-        $extra = mytheme_get_emails_extra();
-        foreach ($extra as $item) {
-            if (!empty($item['email'])) {
-                $recipients[] = $item['email'];
-            }
-        }
+		$extra = mytheme_get_emails_extra();
+		foreach ($extra as $item) {
+			if (!empty($item["email"])) {
+				$recipients[] = $item["email"];
+			}
+		}
 
-        if (empty($recipients)) {
-            $recipients[] = get_option('admin_email');
-        }
+		if (empty($recipients)) {
+			$recipients[] = get_option("admin_email");
+		}
 
-        return $recipients;
-    }
+		return $recipients;
+	}
 
-    function mytheme_send_mail($subject, $body_html, $attachments = []) {
-        require_once ABSPATH . WPINC . '/PHPMailer/PHPMailer.php';
-        require_once ABSPATH . WPINC . '/PHPMailer/SMTP.php';
-        require_once ABSPATH . WPINC . '/PHPMailer/Exception.php';
+	function mytheme_send_mail($subject, $body_html, $attachments = [])
+	{
+		require_once ABSPATH . WPINC . "/PHPMailer/PHPMailer.php";
+		require_once ABSPATH . WPINC . "/PHPMailer/SMTP.php";
+		require_once ABSPATH . WPINC . "/PHPMailer/Exception.php";
 
-        $smtp = mytheme_get_smtp_config();
+		$smtp = mytheme_get_smtp_config();
 
-        $mail = new PHPMailer\PHPMailer\PHPMailer(true);
+		$mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
-        try {
-            $mail->isSMTP();
-            $mail->Host       = $smtp['host'];
-            $mail->Port       = $smtp['port'];
-            $mail->SMTPSecure = 'ssl';
-            $mail->SMTPAuth   = true;
-            $mail->Username   = $smtp['username'];
-            $mail->Password   = $smtp['password'];
-            $mail->SMTPOptions = ['ssl' => ['verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true]];
+		try {
+			$mail->isSMTP();
+			$mail->Host = $smtp["host"];
+			$mail->Port = $smtp["port"];
+			$mail->SMTPSecure = "ssl";
+			$mail->SMTPAuth = true;
+			$mail->Username = $smtp["username"];
+			$mail->Password = $smtp["password"];
+			$mail->SMTPOptions = [
+				"ssl" => [
+					"verify_peer" => false,
+					"verify_peer_name" => false,
+					"allow_self_signed" => true,
+				],
+			];
 
-            $mail->CharSet = 'UTF-8';
-            $mail->setFrom($smtp['username'], $smtp['from_name']);
+			$mail->CharSet = "UTF-8";
+			$mail->setFrom($smtp["username"], $smtp["from_name"]);
 
-            foreach (mytheme_get_recipients() as $email) {
-                $mail->addAddress($email);
-            }
+			foreach (mytheme_get_recipients() as $email) {
+				$mail->addAddress($email);
+			}
 
-            $mail->isHTML(true);
-            $mail->Subject = $subject;
-            $mail->Body    = $body_html;
+			$mail->isHTML(true);
+			$mail->Subject = $subject;
+			$mail->Body = $body_html;
 
-            // Добавляем вложения если есть
-            foreach ($attachments as $attach) {
-                $mail->addAttachment($attach['path'], $attach['name']);
-            }
+			// Добавляем вложения если есть
+			foreach ($attachments as $attach) {
+				$mail->addAttachment($attach["path"], $attach["name"]);
+			}
 
-            $mail->send();
-            return true;
-
-        } catch (\Exception $e) {
-            error_log('mytheme_send_mail: ' . $e->getMessage());
-            return false;
-        }
-    }
-
-    /**
-     * Получить дополнительные email из повторителя
-     */
-    function mytheme_get_emails_extra() {
-        $emails_json = get_theme_mod('mytheme_emails_extra_json', '');
-        $emails = json_decode($emails_json, true);
-        return is_array($emails) ? $emails : array();
-    }
+			$mail->send();
+			return true;
+		} catch (\Exception $e) {
+			error_log("mytheme_send_mail: " . $e->getMessage());
+			return false;
+		}
+	}
 
     
     /**
@@ -1018,28 +578,28 @@
                     $values = array();
                 }
         ?>
-                <label>
-                    <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
-                    <?php if (!empty($this->description)) : ?>
-                        <span class="description customize-control-description"><?php echo esc_html($this->description); ?></span>
-                    <?php endif; ?>
-                </label>
+<label>
+	<span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
+	<?php if (!empty($this->description)) : ?>
+	<span class="description customize-control-description"><?php echo esc_html($this->description); ?></span>
+	<?php endif; ?>
+</label>
 
-                <div class="phone-repeater-list">
-                    <?php foreach ($values as $index => $phone) : ?>
-                        <div class="phone-repeater-item" style="margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
-                            <input type="text" placeholder="Номер для отображения (напр: 8 (4912) 77-70-98)" value="<?php echo esc_attr($phone['display']); ?>" class="phone-display" style="width: 100%; margin-bottom: 5px;" />
-                            <input type="text" placeholder="Номер для ссылки (напр: 84912777098)" value="<?php echo esc_attr($phone['link']); ?>" class="phone-link" style="width: 100%; margin-bottom: 5px;" />
-                            <button type="button" class="button remove-phone" style="color: #a00;">Удалить</button>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
+<div class="phone-repeater-list">
+	<?php foreach ($values as $index => $phone) : ?>
+	<div class="phone-repeater-item" style="margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+		<input type="text" placeholder="Номер для отображения (напр: 8 (4912) 77-70-98)" value="<?php echo esc_attr($phone['display']); ?>" class="phone-display" style="width: 100%; margin-bottom: 5px;" />
+		<input type="text" placeholder="Номер для ссылки (напр: 84912777098)" value="<?php echo esc_attr($phone['link']); ?>" class="phone-link" style="width: 100%; margin-bottom: 5px;" />
+		<button type="button" class="button remove-phone" style="color: #a00;">Удалить</button>
+	</div>
+	<?php endforeach; ?>
+</div>
 
-                <button type="button" class="button add-phone" style="margin-top: 10px;">+ Добавить телефон</button>
+<button type="button" class="button add-phone" style="margin-top: 10px;">+ Добавить телефон</button>
 
-                <input type="hidden" <?php $this->link(); ?> value="<?php echo esc_attr($this->value()); ?>" class="phone-repeater-value" />
+<input type="hidden" <?php $this->link(); ?> value="<?php echo esc_attr($this->value()); ?>" class="phone-repeater-value" />
 
-                <script type="text/javascript">
+<script type="text/javascript">
                     jQuery(document).ready(function($) {
                         var control = $('#customize-control-<?php echo esc_js($this->id); ?>');
 
@@ -1077,7 +637,7 @@
                         });
                     });
                 </script>
-        <?php
+<?php
             }
         }
 
@@ -1096,27 +656,27 @@
                     $values = array();
                 }
         ?>
-                <label>
-                    <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
-                    <?php if (!empty($this->description)) : ?>
-                        <span class="description customize-control-description"><?php echo esc_html($this->description); ?></span>
-                    <?php endif; ?>
-                </label>
+<label>
+	<span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
+	<?php if (!empty($this->description)) : ?>
+	<span class="description customize-control-description"><?php echo esc_html($this->description); ?></span>
+	<?php endif; ?>
+</label>
 
-                <div class="email-repeater-list">
-                    <?php foreach ($values as $index => $email) : ?>
-                        <div class="email-repeater-item" style="margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
-                            <input type="email" placeholder="Email адрес" value="<?php echo esc_attr($email['email']); ?>" class="email-address" style="width: 100%; margin-bottom: 5px;" />
-                            <button type="button" class="button remove-email" style="color: #a00;">Удалить</button>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
+<div class="email-repeater-list">
+	<?php foreach ($values as $index => $email) : ?>
+	<div class="email-repeater-item" style="margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+		<input type="email" placeholder="Email адрес" value="<?php echo esc_attr($email['email']); ?>" class="email-address" style="width: 100%; margin-bottom: 5px;" />
+		<button type="button" class="button remove-email" style="color: #a00;">Удалить</button>
+	</div>
+	<?php endforeach; ?>
+</div>
 
-                <button type="button" class="button add-email" style="margin-top: 10px;">+ Добавить email</button>
+<button type="button" class="button add-email" style="margin-top: 10px;">+ Добавить email</button>
 
-                <input type="hidden" <?php $this->link(); ?> value="<?php echo esc_attr($this->value()); ?>" class="email-repeater-value" />
+<input type="hidden" <?php $this->link(); ?> value="<?php echo esc_attr($this->value()); ?>" class="email-repeater-value" />
 
-                <script type="text/javascript">
+<script type="text/javascript">
                     jQuery(document).ready(function($) {
                         var control = $('#customize-control-<?php echo esc_js($this->id); ?>');
 
@@ -1151,111 +711,10 @@
                         });
                     });
                 </script>
-        <?php
+<?php
             }
         }
     }
-
-	
-	/*** ON EXCERPT FOR PAGES ***/
-	add_action('init', 'add_excerpt_to_pages');
-	function add_excerpt_to_pages() {
-		add_post_type_support('page', 'excerpt');
-	}
-	/*** END ON EXCERPT FOR PAGES ***/
-	
-	
-	
-	
-	/*** ДЕЛАЕМ ПРАВИЛЬНЫЙ TITLE ДЛЯ КАЖДОЙ СТРАНИЦЫ ***/ 
-	function echo_title() {
-		
-		// Если страница категории продукта woocommerce
-		if ( is_product_category() ) {
-			foreach( wp_get_post_terms( get_the_id(), 'product_cat' ) as $term ){
-				if( $term ){
-					if ( $term->name ) {
-						if ( $term->name == "Кухни" ) {
-							echo "Каталог кухонь &#8212; Декор-Север"; // Product category name
-						
-						} elseif ( $term->name == "Шкафы" ) {
-							echo "Каталог шкафов &#8212; Декор-Север"; // Product category name
-							
-						} elseif ( $term->name == "Корпусная мебель" ) {
-							echo "Каталог корпусной мебели &#8212; Декор-Север"; // Product category name
-						
-						} else {
-							echo $term->name; // Product category name
-						}
-					}
-				}
-			}
-		
-		// Если страница портфолио
-		} elseif ( is_post_type_archive( 'portfolio' ) ) {
-			echo 'Наши выполненные работы &#8212; Декор-Север';
-		
-		// Если страница категорий портфолио
-		} elseif ( is_tax( 'portfolio-cat' ) ) {
-			$term = get_queried_object(); // Получаем текущий термин
-			echo "Наши работы: " . $term->name . " &#8212; Декор-Север";
-		
-		} else {
-			echo wp_get_document_title();
-		}
-	}
-	/*** END ДЕЛАЕМ ПРАВИЛЬНЫЙ TITLE ДЛЯ КАЖДОЙ СТРАНИЦЫ ***/
-	
-	
-	
-	
-	/*** ДЕЛАЕМ ПРАВИЛЬНЫЙ DESCRIPTION ДЛЯ КАЖДОЙ СТРАНИЦЫ ***/
-	function echo_description() {
-		
-		// Если страница стандартной категории поста
-		if ( is_category() ) {
-			echo wp_strip_all_tags( category_description() );
-		
-		// Если страница продукта woocommerce
-		} elseif ( is_product() ) {
-			$product = wc_get_product( get_the_ID() ); 
-			$short_description = $product->get_short_description();
-			echo wp_strip_all_tags( $short_description );
-		
-		// Если страница категории продукта woocommerce
-		} elseif ( is_product_category() ) {
-			foreach( wp_get_post_terms( get_the_id(), 'product_cat' ) as $term ){
-				if( $term ){
-					//echo $term->name . '<br>'; // product category name
-					if ( $term->description ) {
-						echo $term->description; // Product category description
-					}
-				}
-			}
-		
-		// Если страница портфолио
-		} elseif ( is_post_type_archive( 'portfolio' ) ) {
-			echo 'Наши выполненные работы - Декор-Север';
-		
-		// Если страница категорий портфолио
-		} elseif ( is_tax( 'portfolio-cat' ) ) {
-			$term = get_queried_object(); // Получаем текущий термин
-			echo $term->description;
-		
-		// Если страница магазина	
-		} elseif ( is_shop() ) {
-			$shop_page_id = wc_get_page_id('shop');
-			echo get_the_excerpt($shop_page_id);
-		
-		// Если обычная страница
-		} else {
-			echo get_the_excerpt();
-		}
-	}
-	/*** END ДЕЛАЕМ ПРАВИЛЬНЫЙ DESCRIPTION ДЛЯ КАЖДОЙ СТРАНИЦЫ ***/
-	
-	
-	
 
 /*** ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
 add_filter('robots_txt', 'custom_robots_txt');

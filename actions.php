@@ -44,7 +44,7 @@
 					<div class="col-md-4 mb-5 project-entry">
 						<a>
 							<div class="figure rounded shadow">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/actions/action-img-1.jpg" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/actions/action-img-1.jpg" class="img-fluid">
 							</div>
 						</a>
 						<h3 class="mb-3">Выезд замерщика и 3D-проект абсолютно бесплато!</h3>
@@ -54,7 +54,7 @@
 					<div class="col-md-4 mb-5 project-entry">
 						<a>
 							<div class="figure rounded shadow">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/actions/action-img-3.jpg" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/actions/action-img-3.jpg" class="img-fluid">
 							</div>
 						</a>
 						<h3 class="mb-2">Рассрочка на все 0%</h3>
@@ -64,7 +64,7 @@
 					<div class="col-md-4 mb-5 project-entry">
 						<a>
 							<div class="figure rounded shadow">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/actions/action-img-4.jpg" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/actions/action-img-4.jpg" class="img-fluid">
 							</div>
 						</a>
 						<h3 class="mb-3">Бесплатная доставка в пределах МКАД</h3>
@@ -74,7 +74,7 @@
 					<div class="col-md-4 mb-5 project-entry">
 						<a>
 							<div class="figure rounded shadow">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/actions/action-img-5.jpg" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/actions/action-img-5.jpg" class="img-fluid">
 							</div>
 						</a>
 						<h3 class="mb-2">Индивидуальные подарки</h3>
@@ -84,7 +84,7 @@
 					<div class="col-md-4 mb-5 project-entry">
 						<a>
 							<div class="figure rounded shadow">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/actions/action-img-6.jpg" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/actions/action-img-6.jpg" class="img-fluid">
 							</div>
 						</a>
 						<h3 class="mb-2">Индивидуальная скидка 10%</h3>
@@ -94,7 +94,7 @@
 					<div class="col-md-4 mb-5 project-entry">
 						<a>
 							<div class="figure rounded shadow">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/actions/action-img-7.jpg" class="img-fluid">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/actions/action-img-7.jpg" class="img-fluid">
 							</div>
 						</a>
 						<h3 class="mb-3">Скидки новоселам</h3>
@@ -114,13 +114,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="d-none d-md-block col-md-6" style="position: relative;">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/men.png">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/men.png">
 			</div>
 			<div class="col-md-6">
 				<h2>Остались вопросы?</h2>
 				<p style="max-width: 570px;">Здравствуйте! Хотите, мы свяжемся с вами в ближайшее время и все подробно расскажем?</p>
 				<div class="title-line mb-5" style="margin: unset;"></div>
-				<form method="post" action="<?php echo get_template_directory_uri(); ?>/mails/order-mail.php">
+				<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/order-mail.php">
 					<div class="row">
 						<div class="col-md-4">
 							<label for="exampleFormControlInput1" class="form-label">Ваше имя</label>
@@ -138,7 +138,7 @@
 							<div class="form-check mt-3">
 									<input class="form-check-input" type="checkbox" id="gridCheck-6" checked>
 									<label class="form-check-label" for="gridCheck-6">
-										<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке персональных данных в <a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политике конфиденциальности.</a></small></p>
+										<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке персональных данных в <a href="<?php echo get_stylesheet_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политике конфиденциальности.</a></small></p>
 									</label>
 								</div>
 						</div>

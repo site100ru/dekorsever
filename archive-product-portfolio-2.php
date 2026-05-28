@@ -100,7 +100,7 @@
 
                         <li class="nav-item">
 							<a class="nav-link ico-button" href="https://max.ru/u/f9LHodD0cOIaPC-JT3CO_gR8lX_0r8w8ZdryldFEBqfWiLtrMWwQNmVViZk">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/max.svg">
 							</a>
 						</li>
 					</ul>
@@ -113,7 +113,7 @@
 		<nav id="top-menu-1" class="header-nav-bottom navbar navbar-expand-lg navbar-light py-0">
 			<div class="container">
                 <a href="/" class="navbar-brand" rel="home" aria-current="page">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/ico/logo-transparent.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/logo-transparent.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
                 </a>
 				
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobail-header-collapse" aria-controls="mobail-header-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -170,7 +170,7 @@
 		<nav class="header-nav-bottom navbar navbar-expand-lg navbar-light py-1 py-lg-0">
 			<div class="container">
                 <a href="/" class="navbar-brand " rel="home" aria-current="page">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/ico/logo.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/logo.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
                 </a>
 				
 				<div class="d-lg-none">

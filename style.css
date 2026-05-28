@@ -1,11 +1,12 @@
 /**
  * Theme Name: Dekor-Sever
+ * Template: mozaika
  * Theme URI: https://site100.ru
  * Version: 1
  * Description: WordPress тема для компаний занимающихся производством и продажей корпусной мебели и мебельных магазинов
  * Author: site100.ru
  * Author URI: https://site100.ru
- */ 
+ */
 
 
 /*
@@ -36,25 +37,44 @@
 /*.right-col-footer-menu ul > li:nth-child(4n+1) { display: none !important }*/
 
 /* Пункты меню в футер-3 которые не показываем */
-#menu-main-menu-2 > li:nth-child(3) { display: none !important }
-#menu-main-menu-2 > li:nth-child(6) { display: none !important }
-#menu-main-menu-2 > li:nth-child(10) { display: none !important }
+#menu-main-menu-2>li:nth-child(3) {
+	display: none !important
+}
 
-#menu-main-menu-3 > li:nth-child(1) { display: none !important }
-#menu-main-menu-3 > li:nth-child(5) { display: none !important }
-#menu-main-menu-3 > li:nth-child(8) { display: none !important }
-#menu-main-menu-3 > li:nth-child(12) { display: none !important }
+#menu-main-menu-2>li:nth-child(6) {
+	display: none !important
+}
+
+#menu-main-menu-2>li:nth-child(10) {
+	display: none !important
+}
+
+#menu-main-menu-3>li:nth-child(1) {
+	display: none !important
+}
+
+#menu-main-menu-3>li:nth-child(5) {
+	display: none !important
+}
+
+#menu-main-menu-3>li:nth-child(8) {
+	display: none !important
+}
+
+#menu-main-menu-3>li:nth-child(12) {
+	display: none !important
+}
 
 
 /*** ARCHIVE PRODUCT ***/
 h4,
 .widget-title {
-    font-family: HelveticaNeueCyr-Bold;
-    color: #4b4b4b;
-    font-size: 14px;
-    margin-bottom: 5px;
-    display: block;
-    text-transform: uppercase;
+	font-family: HelveticaNeueCyr-Bold;
+	color: #4b4b4b;
+	font-size: 14px;
+	margin-bottom: 5px;
+	display: block;
+	text-transform: uppercase;
 }
 
 .form-check-label,
@@ -92,25 +112,25 @@ h4,
 	content: '';
 	display: inline-block;
 	width: 18px;
-    height: 18px;
-    border: 1px solid #dddddd;
+	height: 18px;
+	border: 1px solid #dddddd;
 	margin-right: 8px;
 	position: relative;
 	top: 3px;
-	
+
 }
 
 .woocommerce-widget-layered-nav-list__item.wc-layered-nav-term a:focus:after,
 .woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen a:after {
 	content: '';
 	display: inline-block;
-    width: 10px;
-    height: 10px;
+	width: 10px;
+	height: 10px;
 	background-color: var(--corporate-color-1);
 	margin-right: 8px;
 	position: absolute;
 	left: 4px;
-    top: 11px;
+	top: 11px;
 }
 
 .woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen a:focus:after,
@@ -120,10 +140,10 @@ h4,
 
 
 ul.product-categories {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 5px;
-    margin-bottom: 30px;
+	list-style: none;
+	padding-left: 0;
+	margin-top: 5px;
+	margin-bottom: 30px;
 }
 
 
@@ -145,4 +165,5 @@ del {
 	display: block;
 	line-height: 115%;
 }
+
 /*** END ARCHIVE PRODUCT ***/

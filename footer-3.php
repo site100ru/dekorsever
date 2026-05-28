@@ -325,7 +325,7 @@
 								<a href="https://site100.ru" class="text-light">site100.ru</a>
 							</div>
 							<div class="policy-in-footer">
-								<a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политика конфиденциальности</a> | <a href="<?php echo get_template_directory_uri(); ?>/docs/Consent-to-the-processing-of-personal-data.pdf" target="_blank">Согласие на обработку персональных данных</a>
+								<a href="<?php echo get_stylesheet_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политика конфиденциальности</a> | <a href="<?php echo get_stylesheet_directory_uri(); ?>/docs/Consent-to-the-processing-of-personal-data.pdf" target="_blank">Согласие на обработку персональных данных</a>
 							</div>
 						</div>
 					</div>
@@ -485,7 +485,7 @@
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" id="gridCheck" checked>
 								<label class="form-check-label" for="gridCheck">
-									<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке персональных данных в <a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политике конфиденциальности.</a></small></p>
+									<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке персональных данных в <a href="<?php echo get_stylesheet_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политике конфиденциальности.</a></small></p>
 								</label>
 							</div>
 						</div>
@@ -537,7 +537,7 @@
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" id="gridCheck-2" checked>
 								<label class="form-check-label" for="gridCheck-2">
-									<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке персональных данных в <a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политике конфиденциальности.</a></small></p>
+									<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке персональных данных в <a href="<?php echo get_stylesheet_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политике конфиденциальности.</a></small></p>
 								</label>
 							</div>
 						</div>
@@ -580,7 +580,7 @@
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" id="gridCheck-3" checked>
 								<label class="form-check-label" for="gridCheck-3">
-									<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке персональных данных в <a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политике конфиденциальности.</a></small></p>
+									<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке персональных данных в <a href="<?php echo get_stylesheet_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политике конфиденциальности.</a></small></p>
 								</label>
 							</div>
 						</div>
@@ -599,7 +599,7 @@
 			<div class="form-content container p-0">
 				<div class="row justify-content-center align-items-center">
 					<div class="col-md-9">
-						<p class="mb-md-0">На нашем сайте используются cookie-файлы, в том числе сервисов веб-аналитики. Используя сайт, вы соглашаетесь на <a href="<?php echo get_template_directory_uri(); ?>/docs/Consent-to-the-processing-of-personal-data.pdf" target="blank">обработку персональных данных</a> при помощи cookie-файлов. Подробнее об обработке персональных данных вы можете узнать в <a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="blank">Политике конфиденциальности.</a></p>
+						<p class="mb-md-0">На нашем сайте используются cookie-файлы, в том числе сервисов веб-аналитики. Используя сайт, вы соглашаетесь на <a href="<?php echo get_stylesheet_directory_uri(); ?>/docs/Consent-to-the-processing-of-personal-data.pdf" target="blank">обработку персональных данных</a> при помощи cookie-файлов. Подробнее об обработке персональных данных вы можете узнать в <a href="<?php echo get_stylesheet_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="blank">Политике конфиденциальности.</a></p>
 					</div>
 					<div class="col-md-3 text-md-center">
 						<button id="closeBtn" class="btn btn-corporate-color-1">Понятно</button>
@@ -747,7 +747,7 @@
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" id="gridCheck-2" checked>
 								<label class="form-check-label" for="gridCheck-2">
-									<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке персональных данных в <a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политике конфиденциальности.</a></small></p>
+									<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке персональных данных в <a href="<?php echo get_stylesheet_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политике конфиденциальности.</a></small></p>
 								</label>
 							</div>
 						</div>
