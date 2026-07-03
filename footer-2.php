@@ -1,3 +1,18 @@
+		<?php
+			// В каталоге (страница магазина и карточки товаров) показываем контакты Натальи
+			if ( is_shop() || is_product() ) {
+				$dsever_footer_phones = array(
+					array( 'display' => '8 (495) 542-02-15', 'tel' => '84955420215' ),
+					array( 'display' => '8 (925) 542-02-15', 'tel' => '89255420215' ),
+				);
+				$dsever_footer_email = 'raspil-ds@yandex.ru';
+			} else {
+				$dsever_footer_phones = array(
+					array( 'display' => '8 (499) 390-01-00', 'tel' => '84993900100' ),
+				);
+				$dsever_footer_email = 'mebel-dsever@yandex.ru';
+			}
+		?>
  		<!-- Contacts -->
 		<div id="contacts-sp" class="scroll-points"></div>
 		<section class="contacts-section-3">
@@ -57,9 +72,14 @@
 									</nav>
 								</div>
 								<div class="col-2 text-end">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" class="me-1">
-									<a href="tel:‪84993900100" class="contacts-phone">
-										8 <span>(499)</span> 390-01-00‬</a>
+									<?php foreach ( $dsever_footer_phones as $dsever_footer_phone_i => $dsever_footer_phone ) : ?>
+										<div class="<?php echo ( $dsever_footer_phone_i < count( $dsever_footer_phones ) - 1 ) ? 'mb-2' : ''; ?>">
+											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" class="me-1">
+											<a href="tel:<?php echo esc_attr( $dsever_footer_phone['tel'] ); ?>" class="contacts-phone">
+												<?php echo esc_html( $dsever_footer_phone['display'] ); ?>
+											</a>
+										</div>
+									<?php endforeach; ?>
 								</div>
 							</div>
 							<!-- End Desktop version -->
@@ -101,13 +121,13 @@
 											</a>
 										</li>
 										<li class="nav-item">
-											<a href="mailto:mebel-dsever@yandex.ru" class="nav-link ps-0 py-2">
+											<a href="mailto:<?php echo esc_attr( $dsever_footer_email ); ?>" class="nav-link ps-0 py-2">
 												<div style="display: flex;" class="align-items-center">
 													<div class="nav-li-float-left">
 														<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/email-ico.svg">
 													</div>
 													<div class="nav-li-float-right">
-														<span>mebel-dsever@yandex.ru</span>
+														<span><?php echo esc_html( $dsever_footer_email ); ?></span>
 													</div>
 													<div style="clear: both;"></div>
 												</div>
@@ -141,12 +161,14 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-12">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" class="pe-2"> 
-									<a href="tel:‪84993900100" class="contacts-phone">
-										8<span>(499)</span> 390-01-00‬
-									</a>
-								</div>
+								<?php foreach ( $dsever_footer_phones as $dsever_footer_phone_i => $dsever_footer_phone ) : ?>
+									<div class="col-12<?php echo ( $dsever_footer_phone_i > 0 ) ? ' pt-3' : ''; ?>">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" class="pe-2">
+										<a href="tel:<?php echo esc_attr( $dsever_footer_phone['tel'] ); ?>" class="contacts-phone">
+											<?php echo esc_html( $dsever_footer_phone['display'] ); ?>
+										</a>
+									</div>
+								<?php endforeach; ?>
 							</div>
 							<!-- END Mobail version -->
 
@@ -186,13 +208,13 @@
 									</a>
 								</li>
 								<li class="nav-item me-1 me-lg-2">
-									<a href="mailto:mebel-dsever@yandex.ru" class="nav-link">
+									<a href="mailto:<?php echo esc_attr( $dsever_footer_email ); ?>" class="nav-link">
 										<div style="display: flex;" class="align-items-center">
 											<div class="nav-li-float-left">
 												<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/email-ico.svg">
 											</div>
 											<div class="nav-li-float-right">
-												<span>mebel-dsever@yandex.ru</span>
+												<span><?php echo esc_html( $dsever_footer_email ); ?></span>
 											</div>
 											<div style="clear: both;"></div>
 										</div>

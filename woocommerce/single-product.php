@@ -354,7 +354,7 @@ get_header( '2' ); ?>
 						</h3>
 						<div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
-								<p class="mb-0">Вызвать замерщика Вы можете любым из способов: оставить онлайн-заявку на нашем сайте, написать на электронный адрес: <a target="_blank" href="mailto:mebel-dsever@yandex.ru" itemprop="email">mebel-dsever@yandex.ru</a>, позвонить по телефону ☎ <a href="tel:84993900100" style="text-decoration: none;"><b>8 (499) 390-01-00‬</b></a> или оставить заявку на обратный звонок, написать в Telegram или Whatsapp.</p>
+								<p class="mb-0">Вызвать замерщика Вы можете любым из способов: оставить онлайн-заявку на нашем сайте, написать на электронный адрес: <a target="_blank" href="mailto:raspil-ds@yandex.ru" itemprop="email">raspil-ds@yandex.ru</a>, позвонить по телефону ☎ <a href="tel:84955420215" style="text-decoration: none;"><b>8 (495) 542-02-15‬</b></a> или оставить заявку на обратный звонок, написать в Telegram или Whatsapp.</p>
 							</div>
 						</div>
 					</div>
@@ -379,7 +379,7 @@ get_header( '2' ); ?>
 						<div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								<p>Конечно!</p>
-								<p class="mb-0">Направьте эскиз с Вашей кухней (или другой корпусной мебелью) на нашу электронную почту:<a target="_blank" href="mailto:mebel-dsever@yandex.ru" itemprop="email">mebel-dsever@yandex.ru</a>, дополнительно указав в письме материал фасадов, 
+								<p class="mb-0">Направьте эскиз с Вашей кухней (или другой корпусной мебелью) на нашу электронную почту:<a target="_blank" href="mailto:raspil-ds@yandex.ru" itemprop="email">raspil-ds@yandex.ru</a>, дополнительно указав в письме материал фасадов, 
 									комплектацию, габариты мебели и мы предоставим расчет в ответном письме.</p>
 							</div>
 						</div>

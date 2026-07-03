@@ -15,6 +15,20 @@
 					),
 					'email'  => 'info@dekor-sever.ru',
 				),
+				'archive-product-portfolio.php'   => array(
+					'phones' => array(
+						array( 'display' => '8 (495) 542-02-15', 'tel' => '84955420215' ),
+						array( 'display' => '8 (925) 542-02-15', 'tel' => '89255420215' ),
+					),
+					'email'  => 'raspil-ds@yandex.ru',
+				),
+				'archive-product-portfolio-2.php' => array(
+					'phones' => array(
+						array( 'display' => '8 (495) 542-02-15', 'tel' => '84955420215' ),
+						array( 'display' => '8 (925) 542-02-15', 'tel' => '89255420215' ),
+					),
+					'email'  => 'raspil-ds@yandex.ru',
+				),
 			);
 
 			if ( isset( $dsever_footer_contacts[ $dsever_footer_template ] ) ) {

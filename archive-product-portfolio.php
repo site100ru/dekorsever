@@ -75,13 +75,26 @@
 							</a>
 						</li>
 						<li class="nav-item me-4">
-							<a class="top-menu-tel nav-link" href="tel:84993900100">
+							<a class="top-menu-tel nav-link" href="tel:84955420215">
 								<div style="display: flex;">
 									<div class="nav-li-float-left">
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg">
 									</div>
-									<div class="nav-li-float-right" >
-										8 (499) 390-01-00
+									<div class="nav-li-float-right" style="text-wrap: nowrap;">
+										8 (495) 542-02-15
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item me-4 d-none d-xl-block">
+							<a class="top-menu-tel nav-link" href="tel:89255420215">
+								<div style="display: flex;">
+									<div class="nav-li-float-left">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg">
+									</div>
+									<div class="nav-li-float-right" style="text-wrap: nowrap;">
+										8 (925) 542-02-15
 									</div>
 									<div style="clear: both;"></div>
 								</div>
@@ -135,7 +148,7 @@
 											<img src="'.get_stylesheet_directory_uri().'/img/ico/location-ico.svg" style="width: 10px;" class="me-1">
 												<span>Мытищи, д. Грибки, ул. Промышленная, 64Д, к2</span>
 										</div>
-										<a class="nav-link top-menu-tel pt-1 pb-1" href="tel:84993900100">8 (499) 390-01-00</a>
+										<a class="nav-link top-menu-tel pt-1 pb-1" href="tel:84955420215">8 (495) 542-02-15</a><a class="nav-link top-menu-tel pt-1 pb-1" href="tel:89255420215">8 (925) 542-02-15</a>
 										<div class="mb-2" style="font-size: 12px; font-family: HelveticaNeueCyr-Light; text-transform: none;">
 											<img src="'.get_stylesheet_directory_uri().'/img/ico/clock-ico.svg" style="width: 10px; position: relative; top: 2px;" class="me-1 mb-2">Ежедневно с 9:00 до 18:00
 										</div>
@@ -174,7 +187,7 @@
                 </a>
 				
 				<div class="d-lg-none">
-					<a class="top-menu-tel pt-1 pb-0" style="font-size: 14px;" href="tel:84993900100">8 (499) 390-01-00</a>
+					<a class="top-menu-tel pt-1 pb-0" style="font-size: 14px;" href="tel:84955420215">8 (495) 542-02-15</a>
 					<div style="font-size: 10px; font-family: Gilroy-Light; text-transform: none;">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/clock-ico.svg" style="width: 12px; position: relative; top: -1px;" class="me-1">Пн-Пт 9:00-18:00
 					</div>
@@ -199,7 +212,7 @@
 											<img src="'.get_stylesheet_directory_uri().'/img/ico/location-ico.svg" style="width: 10px;" class="me-1">
 												<span>Мытищи, д. Грибки, ул. Промышленная, 64Д, к2</span>
 										</div>
-										<a class="nav-link top-menu-tel pt-1 pb-1" href="tel:84993900100">8 (499) 390-01-00</a>
+										<a class="nav-link top-menu-tel pt-1 pb-1" href="tel:84955420215">8 (495) 542-02-15</a><a class="nav-link top-menu-tel pt-1 pb-1" href="tel:89255420215">8 (925) 542-02-15</a>
 										<div class="mb-2" style="font-size: 12px; font-family: HelveticaNeueCyr-Light; text-transform: none;">
 											<img src="'.get_stylesheet_directory_uri().'/img/ico/clock-ico.svg" style="width: 10px; position: relative; top: 2px;" class="me-1 mb-2">Пн - Пт, с 9:00 до 18:00
 										</div>
@@ -591,7 +604,7 @@
 						</h3>
 						<div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
-								<p class="mb-0">Вызвать замерщика Вы можете любым из способов: оставить онлайн-заявку на нашем сайте, написать на электронный адрес: <a target="_blank" href="mailto:mebel-dsever@yandex.ru" itemprop="email">mebel-dsever@yandex.ru</a>, позвонить по телефону ☎ <a href="tel:84993900100" style="text-decoration: none;"><b>8 (499) 390-01-00‬</b></a> или оставить заявку на обратный звонок, написать в Telegram или Whatsapp.</p>
+								<p class="mb-0">Вызвать замерщика Вы можете любым из способов: оставить онлайн-заявку на нашем сайте, написать на электронный адрес: <a target="_blank" href="mailto:raspil-ds@yandex.ru" itemprop="email">raspil-ds@yandex.ru</a>, позвонить по телефону ☎ <a href="tel:84955420215" style="text-decoration: none;"><b>8 (495) 542-02-15‬</b></a> или оставить заявку на обратный звонок, написать в Telegram или Whatsapp.</p>
 							</div>
 						</div>
 					</div>
@@ -616,7 +629,7 @@
 						<div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								<p>Конечно!</p>
-								<p class="mb-0">Направьте эскиз с Вашей кухней (или другой корпусной мебелью) на нашу электронную почту:<a target="_blank" href="mailto:mebel-dsever@yandex.ru" itemprop="email">mebel-dsever@yandex.ru</a>, дополнительно указав в письме материал фасадов, 
+								<p class="mb-0">Направьте эскиз с Вашей кухней (или другой корпусной мебелью) на нашу электронную почту:<a target="_blank" href="mailto:raspil-ds@yandex.ru" itemprop="email">raspil-ds@yandex.ru</a>, дополнительно указав в письме материал фасадов, 
 									комплектацию, габариты мебели и мы предоставим расчет в ответном письме.</p>
 							</div>
 						</div>
