@@ -71,13 +71,26 @@
 							</a>
 						</li>
 						<li class="nav-item me-4">
-							<a class="top-menu-tel nav-link" href="tel:84993900100">
+							<a class="top-menu-tel nav-link" href="tel:84956424787">
 								<div style="display: flex;">
 									<div class="nav-li-float-left">
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg">
 									</div>
-									<div class="nav-li-float-right">
-										8 (499) 390-01-00
+									<div class="nav-li-float-right" style="text-wrap: nowrap;">
+										8 (495) 642-47-87
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item me-4 d-none d-xl-block">
+							<a class="top-menu-tel nav-link" href="tel:89256424787">
+								<div style="display: flex;">
+									<div class="nav-li-float-left">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg">
+									</div>
+									<div class="nav-li-float-right" style="text-wrap: nowrap;">
+										8 (925) 642-47-87
 									</div>
 									<div style="clear: both;"></div>
 								</div>
@@ -131,7 +144,7 @@
 											<img src="'.get_stylesheet_directory_uri().'/img/ico/location-ico.svg" style="width: 10px;" class="me-1">
 												<span>Мытищи, д. Грибки, ул. Промышленная, 64Д, к2</span>
 										</div>
-										<a class="nav-link top-menu-tel pt-1 pb-1" href="tel:84993900100">8 (499) 390-01-00</a>
+										<a class="nav-link top-menu-tel pt-1 pb-1" href="tel:84956424787">8 (495) 642-47-87</a><a class="nav-link top-menu-tel pt-1 pb-1" href="tel:89256424787">8 (925) 642-47-87</a>
 										<div class="mb-2" style="font-size: 12px; font-family: HelveticaNeueCyr-Light; text-transform: none;">
 											<img src="'.get_stylesheet_directory_uri().'/img/ico/clock-ico.svg" style="width: 10px; position: relative; top: 2px;" class="me-1 mb-2">Ежедневно с 9:00 до 18:00
 										</div>
@@ -170,7 +183,7 @@
 				</a>
 
 				<div class="d-lg-none">
-					<a class="top-menu-tel pt-1 pb-0" style="font-size: 14px;" href="tel:84993900100">8 (499) 390-01-00</a>
+					<a class="top-menu-tel pt-1 pb-0" style="font-size: 14px;" href="tel:84956424787">8 (495) 642-47-87</a>
 					<div style="font-size: 10px; font-family: Gilroy-Light; text-transform: none;">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/clock-ico.svg" style="width: 12px; position: relative; top: -1px;" class="me-1">Пн-Пт 9:00-18:00
 					</div>
@@ -195,7 +208,7 @@
 											<img src="'.get_stylesheet_directory_uri().'/img/ico/location-ico.svg" style="width: 10px;" class="me-1">
 												<span>Мытищи, д. Грибки, ул. Промышленная, 64Д, к2</span>
 										</div>
-										<a class="nav-link top-menu-tel pt-1 pb-1" href="tel:84993900100">8 (499) 390-01-00</a>
+										<a class="nav-link top-menu-tel pt-1 pb-1" href="tel:84956424787">8 (495) 642-47-87</a><a class="nav-link top-menu-tel pt-1 pb-1" href="tel:89256424787">8 (925) 642-47-87</a>
 										<div class="mb-2" style="font-size: 12px; font-family: HelveticaNeueCyr-Light; text-transform: none;">
 											<img src="'.get_stylesheet_directory_uri().'/img/ico/clock-ico.svg" style="width: 10px; position: relative; top: 2px;" class="me-1 mb-2">Пн - Пт, с 9:00 до 18:00
 										</div>
