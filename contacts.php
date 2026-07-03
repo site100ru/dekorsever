@@ -78,6 +78,54 @@
                                 </a>
                             </div>
                         </div>
+
+                        <!-- 5 блок -->
+                        <div class="col-12 col-md-6 col-xl-3 col-xxl-3 mb-0 mb-md-4">
+                            <div class="d-flex align-items-center mb-4 pb-md-3 flex-wrap">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" class="me-3">
+
+                                <p class="mb-0 text-min-text">
+                                    <span>Наталья, кухни на заказ</span><br>
+                                    <a href="tel:+74955420215" class="text-decoration-none">8 (495) 542-02-15</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 6 блок -->
+                        <div class="col-12 col-md-6 col-xl-3 col-xxl-3 mb-0 mb-md-4">
+                            <div class="d-flex align-items-center mb-4 pb-md-3 flex-wrap">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" class="me-3">
+
+                                <p class="mb-0 text-min-text">
+                                    <span>Наталья, кухни на заказ</span><br>
+                                    <a href="tel:+79255420215" class="text-decoration-none">8 (925) 542-02-15</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 7 блок -->
+                        <div class="col-12 col-md-6 col-xl-3 col-xxl-3 mb-0 mb-md-4">
+                            <div class="d-flex align-items-center mb-4 pb-md-3 flex-wrap">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" class="me-3">
+
+                                <p class="mb-0 text-min-text">
+                                    <span>Олег, покраска и фасады</span><br>
+                                    <a href="tel:+74956424787" class="text-decoration-none">8 (495) 642-47-87</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 8 блок -->
+                        <div class="col-12 col-md-6 col-xl-3 col-xxl-3 mb-0 mb-md-4">
+                            <div class="d-flex align-items-center mb-4 pb-md-3 flex-wrap">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" class="me-3">
+
+                                <p class="mb-0 text-min-text">
+                                    <span>Олег, покраска и фасады</span><br>
+                                    <a href="tel:+79256424787" class="text-decoration-none">8 (925) 642-47-87</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 				
