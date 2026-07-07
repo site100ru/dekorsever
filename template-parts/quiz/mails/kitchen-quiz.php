@@ -4,6 +4,8 @@ $win = "true";
 
 require_once('../../../../../../wp-load.php');
 
+$mailTo = 'raspil-ds@yandex.ru';
+
 if (!empty($_POST)) {
 
     function getCaptcha($key) {
@@ -62,7 +64,7 @@ if (!empty($_POST)) {
                 <p><strong>Подарок:</strong> ' . $answer7 . '</p>
                 </body></html>';
 
-            mytheme_send_mail($subject, $body);
+            mytheme_send_mail($subject, $body, [], [$mailTo]);
 
             $_SESSION['win']       = 1;
             $_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение в салон кухонь «Декор-Север». Мы ответим Вам в&#160;ближайшее время.</p>';

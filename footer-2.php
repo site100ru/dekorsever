@@ -31,7 +31,7 @@
 								<div class="col-8">
 									
 									
-									<nav id="menu-main-menu-1" class="123 navbar navbar-expand-xl navbar-light">
+									<nav id="footer-desktop-main-menu" class="123 navbar navbar-expand-xl navbar-light">
 										<div class="collapse navbar-collapse">					
 											<?php
 												wp_nav_menu(array(
@@ -355,7 +355,7 @@
 				<a data-bs-toggle="modal" data-bs-target="#callbackModal"><div class="callback-form-button-ico"></div></a>
 			</div>
 			<div id="phoneBtn" class="callback-phone-button" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Позвонить">
-				<a href="tel:84993900100"><div class="callback-phone-button-ico"></div></a>
+				<a href="tel:<?php echo esc_attr( end( $dsever_footer_phones )['tel'] ); ?>"><div class="callback-phone-button-ico"></div></a>
 			</div>
 			<div id="whatsappBtn" class="callback-whatsapp-button" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Whatsapp">
 				<!-- Не открывает ссылку с ПК если не установлено приложение WhatsApp

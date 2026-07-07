@@ -67,7 +67,7 @@
 													'container' => false,
 													'menu_class' => '',
 													'fallback_cb' => '__return_false',
-													'items_wrap' => '<ul id="menu-main-menu-1" class="navbar-nav m-auto mb-2 mb-lg-0 %2$s">%3$s</ul>',
+													'items_wrap' => '<ul id="footer-desktop-main-menu" class="navbar-nav m-auto mb-2 mb-lg-0 %2$s">%3$s</ul>',
 													'depth' => 2,
 													'walker' => new bootstrap_5_wp_nav_menu_walker_2()
 												));
@@ -407,7 +407,7 @@
 				<a data-bs-toggle="modal" data-bs-target="#callbackModal"><div class="callback-form-button-ico"></div></a>
 			</div>
 			<div id="phoneBtn" class="callback-phone-button" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Позвонить">
-				<a href="tel:84993900100"><div class="callback-phone-button-ico"></div></a>
+				<a href="tel:<?php echo esc_attr( end( $dsever_phones )['tel'] ); ?>"><div class="callback-phone-button-ico"></div></a>
 			</div>
 			<div id="whatsappBtn" class="callback-whatsapp-button" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Whatsapp">
 				<!-- Не открывает ссылку с ПК если не установлено приложение WhatsApp
