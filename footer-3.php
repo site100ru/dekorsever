@@ -42,6 +42,12 @@
 			}
 
 			$dsever_mails_dir = in_array( $dsever_footer_template, array( 'painting.php', 'production-service-page.php' ), true ) ? '/mails/painting' : '/mails';
+
+			$dsever_page_section_names = array(
+				'painting.php'                => 'Покраска',
+				'production-service-page.php' => 'Фасады для мебели',
+			);
+			$dsever_page_section_name = isset( $dsever_page_section_names[ $dsever_footer_template ] ) ? $dsever_page_section_names[ $dsever_footer_template ] : '';
 		?>
 		<!-- Contacts -->
 		<div id="contacts-sp" class="scroll-points"></div>
@@ -537,6 +543,7 @@
 								</label>
 							</div>
 						</div>
+						<input type="hidden" name="page_section" value="<?php echo esc_attr( $dsever_page_section_name ); ?>">
 						<input type="hidden" id="g-recaptcha-response-callback" name="g-recaptcha-response">
 						<button type="submit" class="btn btn-corporate-color-1 mx-auto">Жду звонка</button>
 					</div>
@@ -589,6 +596,7 @@
 								</label>
 							</div>
 						</div>
+						<input type="hidden" name="page_section" value="<?php echo esc_attr( $dsever_page_section_name ); ?>">
 						<input type="hidden" id="g-recaptcha-response-calculatePriceWithDownload" name="g-recaptcha-response">
 						<button type="submit" style="border-radius: 0.5rem; background-color: var(--corporate-color-1); border-color: var(--corporate-color-1);" class="btn-lg btn btn-corporate-color-1 me-auto">Отправить</button>
 					</div>	

@@ -51,7 +51,8 @@ if (!empty($_POST)) {
             ? '<p><strong>В прикрепленных файлах находятся изображения изделия или схематично нарисованный рисунок!</strong></p>'
             : '';
 
-        $subject = 'Заявка на расчет стоимости с сайта dekorsever.ru (Покраска)';
+        $page_section = htmlspecialchars(trim($_POST['page_section'] ?? ''), ENT_QUOTES, 'UTF-8');
+        $subject = 'Заявка на расчет стоимости с сайта dekorsever.ru' . ( $page_section ? ' (' . $page_section . ')' : '' );
         $body    = '
             <html><body style="font-family:Arial,sans-serif;font-size:14px;color:#333">
             <h2 style="color:#1a1a1a">Заявка на расчет стоимости</h2>

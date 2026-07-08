@@ -27,7 +27,8 @@ if ($_POST) {
         /* Проверям что заполнено поле с телефоном */
         // Если поле с телефоно заполненно
         if ($tel) {
-            $subject = 'Заказ обратного звонка с сайта dekorsever.ru (Покраска)';
+            $page_section = htmlspecialchars(trim($_POST['page_section'] ?? ''), ENT_QUOTES, 'UTF-8');
+            $subject = 'Заказ обратного звонка с сайта dekorsever.ru' . ( $page_section ? ' (' . $page_section . ')' : '' );
             $body_html = '
                 <html><body style="font-family: Arial, sans-serif; font-size: 14px;">
                 <h2>Заказ обратного звонка</h2>
