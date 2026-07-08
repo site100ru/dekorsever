@@ -430,7 +430,7 @@ get_header( '2' ); ?>
 				<p class="mb-3" style="max-width: 570px;">Оставьте заявку, с Вами свяжется наш специалист.</p>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 				<br>
-				<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/order_mail.php">
+				<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/catalog/order_mail.php">
 					<div class="row">
 						<div class="col-8 col-lg-4">
 							<label for="exampleFormControlInput1" class="form-label">Ваше имя</label>

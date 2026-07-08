@@ -12,6 +12,8 @@
 				);
 				$dsever_footer_email = 'mebel-dsever@yandex.ru';
 			}
+
+			$dsever_footer_mails_dir = ( is_shop() || is_product() ) ? '/mails/catalog' : '/mails';
 		?>
  		<!-- Contacts -->
 		<div id="contacts-sp" class="scroll-points"></div>
@@ -454,7 +456,7 @@
 		<!-- Order Modal -->
 		<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
-				<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/order_mail.php" class="modal-content">
+				<form method="post" action="<?php echo get_stylesheet_directory_uri() . $dsever_footer_mails_dir; ?>/order_mail.php" class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="orderModalLabel">Оставить заявку</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -538,7 +540,7 @@
 		<!-- Measurer Modal -->
 		<div class="modal fade" id="measurerModal" tabindex="-1" aria-labelledby="measurerModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
-				<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/measurer-mail.php" class="modal-content">
+				<form method="post" action="<?php echo get_stylesheet_directory_uri() . $dsever_footer_mails_dir; ?>/measurer-mail.php" class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="measurerModalLabel">Вызов замерщика <!--дизайнера (бесплатно)--></h5>
 						

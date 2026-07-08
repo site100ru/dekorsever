@@ -4,7 +4,7 @@ $win = "true";
 
 require_once('../../../../../wp-load.php');
 
-$mailTo = 'info@dekor-sever.ru';
+$mailTo = ['info@dekor-sever.ru', 'vasilyev-r@yandex.ru', 'vasilyev-r@mail.ru', 'sidorov-vv3@mail.ru'];
 
 // Если существует переменная POST, то
 if ($_POST) {
@@ -35,7 +35,7 @@ if ($_POST) {
                 <p><strong>Телефон:</strong> ' . $tel . '</p>
                 </body></html>';
 
-            mytheme_send_mail($subject, $body_html, [], [$mailTo]);
+            mytheme_send_mail($subject, $body_html, [], $mailTo);
 
             $_SESSION['win'] = 1;
             $_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение в компанию «Декор-Север». Мы ответим Вам в&#160;ближайшее время.</p>';

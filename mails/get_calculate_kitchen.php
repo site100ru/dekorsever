@@ -4,6 +4,8 @@ $win = "true";
 
 require_once('../../../../wp-load.php');
 
+$mailTo = ['raspil-ds@yandex.ru', 'vasilyev-r@yandex.ru', 'vasilyev-r@mail.ru', 'sidorov-vv3@mail.ru'];
+
 if (!empty($_POST)) {
 
     // Отправляем данные в Google
@@ -48,7 +50,7 @@ if (!empty($_POST)) {
                 <p><strong>Телефон:</strong> ' . $phone . '</p>
                 </body></html>';
 
-            mytheme_send_mail($subject, $body);
+            mytheme_send_mail($subject, $body, [], $mailTo);
 
             $_SESSION['win']       = 1;
             $_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение в компанию «Декор-Север». Мы ответим Вам в&#160;ближайшее время.</p>';
