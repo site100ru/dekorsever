@@ -498,7 +498,7 @@
 		<!-- Callback Modal -->
 		<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
-				<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php" class="modal-content">
+				<form method="post" action="<?php echo get_stylesheet_directory_uri() . $dsever_footer_mails_dir; ?>/callback-mail.php" class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="callbackModalLabel">Обратный звонок</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -731,7 +731,7 @@
 		<!-- Рассчитать стоимость с загрузкой изображения -->
 		<div class="modal fade" id="calculatePriceWithDownloadModal" tabindex="-1" aria-labelledby="calculatePriceWithDownloadLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
-				<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/get_calculate_2.php" class="modal-content" enctype="multipart/form-data">
+				<form method="post" action="<?php echo get_stylesheet_directory_uri() . $dsever_footer_mails_dir; ?>/get_calculate_2.php" class="modal-content" enctype="multipart/form-data">
 					<div class="modal-header">
 						<h5 class="modal-title" id="calculatePriceWithDownloadLabel">Рассчитать стоимость</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
