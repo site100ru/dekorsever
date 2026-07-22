@@ -41,11 +41,19 @@
 				$dsever_email  = 'mebel-dsever@yandex.ru';
 			}
 
-			$dsever_mails_dir = in_array( $dsever_footer_template, array( 'painting.php', 'production-service-page.php' ), true ) ? '/mails/painting' : '/mails';
+			$dsever_mails_dirs = array(
+				'painting.php'                    => '/mails/painting',
+				'production-service-page.php'     => '/mails/painting',
+				'archive-product-portfolio.php'   => '/mails/kitchen',
+				'archive-product-portfolio-2.php' => '/mails/kitchen',
+			);
+			$dsever_mails_dir = isset( $dsever_mails_dirs[ $dsever_footer_template ] ) ? $dsever_mails_dirs[ $dsever_footer_template ] : '/mails';
 
 			$dsever_page_section_names = array(
-				'painting.php'                => 'Покраска',
-				'production-service-page.php' => 'Фасады для мебели',
+				'painting.php'                    => 'Покраска',
+				'production-service-page.php'     => 'Фасады для мебели',
+				'archive-product-portfolio.php'   => 'Кухни на заказ',
+				'archive-product-portfolio-2.php' => 'Кухни на заказ',
 			);
 			$dsever_page_section_name = isset( $dsever_page_section_names[ $dsever_footer_template ] ) ? $dsever_page_section_names[ $dsever_footer_template ] : '';
 		?>
