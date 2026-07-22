@@ -9,7 +9,7 @@ if (isset($_SESSION["win"])) {
 }
 
 // В каталоге (страница магазина и карточки товаров) показываем телефоны Натальи
-if (is_shop() || is_product()) {
+if (is_shop() || is_product() || is_product_category()) {
 	$dsever_header_phones = [["display" => "8 (495) 542-02-15", "tel" => "84955420215"], ["display" => "8 (925) 542-02-15", "tel" => "89255420215"]];
 } else {
 	$dsever_header_phones = [["display" => "8 (499) 390-01-00", "tel" => "84993900100"]];

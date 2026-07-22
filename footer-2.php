@@ -1,6 +1,6 @@
 		<?php
 			// В каталоге (страница магазина и карточки товаров) показываем контакты Натальи
-			if ( is_shop() || is_product() ) {
+			if ( is_shop() || is_product() || is_product_category() ) {
 				$dsever_footer_phones = array(
 					array( 'display' => '8 (495) 542-02-15', 'tel' => '84955420215' ),
 					array( 'display' => '8 (925) 542-02-15', 'tel' => '89255420215' ),
@@ -13,7 +13,7 @@
 				$dsever_footer_email = 'mebel-dsever@yandex.ru';
 			}
 
-			$dsever_footer_mails_dir = ( is_shop() || is_product() ) ? '/mails/catalog' : '/mails';
+			$dsever_footer_mails_dir = ( is_shop() || is_product() || is_product_category() ) ? '/mails/catalog' : '/mails';
 		?>
  		<!-- Contacts -->
 		<div id="contacts-sp" class="scroll-points"></div>
