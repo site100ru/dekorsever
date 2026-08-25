@@ -711,9 +711,13 @@
 							<span class="quiz-section-h3-subtitle">Начальник производства</span>
 						</div>
 						<div class="d-flex flex-column align-items-center align-items-xl-start">
-							<a href="tel:+74993900100" class="d-flex align-items-center tel">
+							<a href="tel:+74955420215" class="d-flex align-items-center tel">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/template-parts/quiz/ico/mobile-phone-ico.svg" />
-								<span>8 (499) 390-01-00</span>
+								<span>8 (495) 542-02-15</span>
+							</a>
+							<a href="tel:+79255420215" class="d-flex align-items-center tel">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/template-parts/quiz/ico/mobile-phone-ico.svg" />
+								<span>8 (925) 542-02-15</span>
 							</a>
 							<div class="social">
 								<a href="https://t.me/+79361385058" target="_blank">

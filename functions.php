@@ -508,7 +508,7 @@
 		return $recipients;
 	}
 
-	function mytheme_send_mail($subject, $body_html, $attachments = [])
+	function mytheme_send_mail($subject, $body_html, $attachments = [], $recipients_override = [])
 	{
 		require_once ABSPATH . WPINC . "/PHPMailer/PHPMailer.php";
 		require_once ABSPATH . WPINC . "/PHPMailer/SMTP.php";
@@ -537,7 +537,8 @@
 			$mail->CharSet = "UTF-8";
 			$mail->setFrom($smtp["username"], $smtp["from_name"]);
 
-			foreach (mytheme_get_recipients() as $email) {
+			$recipients = !empty($recipients_override) ? $recipients_override : mytheme_get_recipients();
+			foreach ($recipients as $email) {
 				$mail->addAddress($email);
 			}
 

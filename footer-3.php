@@ -1,3 +1,62 @@
+		<?php
+			$dsever_footer_template = basename( (string) get_page_template_slug() );
+			$dsever_footer_contacts = array(
+				'painting.php'                => array(
+					'phones' => array(
+						array( 'display' => '8 (495) 642-47-87', 'tel' => '84956424787' ),
+						array( 'display' => '8 (925) 642-47-87', 'tel' => '89256424787' ),
+					),
+					'email'  => 'info@dekor-sever.ru',
+				),
+				'production-service-page.php' => array(
+					'phones' => array(
+						array( 'display' => '8 (495) 642-47-87', 'tel' => '84956424787' ),
+						array( 'display' => '8 (925) 642-47-87', 'tel' => '89256424787' ),
+					),
+					'email'  => 'info@dekor-sever.ru',
+				),
+				'archive-product-portfolio.php'   => array(
+					'phones' => array(
+						array( 'display' => '8 (495) 542-02-15', 'tel' => '84955420215' ),
+						array( 'display' => '8 (925) 542-02-15', 'tel' => '89255420215' ),
+					),
+					'email'  => 'raspil-ds@yandex.ru',
+				),
+				'archive-product-portfolio-2.php' => array(
+					'phones' => array(
+						array( 'display' => '8 (495) 542-02-15', 'tel' => '84955420215' ),
+						array( 'display' => '8 (925) 542-02-15', 'tel' => '89255420215' ),
+					),
+					'email'  => 'raspil-ds@yandex.ru',
+				),
+			);
+
+			if ( isset( $dsever_footer_contacts[ $dsever_footer_template ] ) ) {
+				$dsever_phones = $dsever_footer_contacts[ $dsever_footer_template ]['phones'];
+				$dsever_email  = $dsever_footer_contacts[ $dsever_footer_template ]['email'];
+			} else {
+				$dsever_phones = array(
+					array( 'display' => '8 (499) 390-01-00', 'tel' => '84993900100' ),
+				);
+				$dsever_email  = 'mebel-dsever@yandex.ru';
+			}
+
+			$dsever_mails_dirs = array(
+				'painting.php'                    => '/mails/painting',
+				'production-service-page.php'     => '/mails/painting',
+				'archive-product-portfolio.php'   => '/mails/kitchen',
+				'archive-product-portfolio-2.php' => '/mails/kitchen',
+			);
+			$dsever_mails_dir = isset( $dsever_mails_dirs[ $dsever_footer_template ] ) ? $dsever_mails_dirs[ $dsever_footer_template ] : '/mails';
+
+			$dsever_page_section_names = array(
+				'painting.php'                    => 'Покраска',
+				'production-service-page.php'     => 'Фасады для мебели',
+				'archive-product-portfolio.php'   => 'Кухни на заказ',
+				'archive-product-portfolio-2.php' => 'Кухни на заказ',
+			);
+			$dsever_page_section_name = isset( $dsever_page_section_names[ $dsever_footer_template ] ) ? $dsever_page_section_names[ $dsever_footer_template ] : '';
+		?>
 		<!-- Contacts -->
 		<div id="contacts-sp" class="scroll-points"></div>
 		<section class="contacts-section-3">
@@ -22,7 +81,7 @@
 													'container' => false,
 													'menu_class' => '',
 													'fallback_cb' => '__return_false',
-													'items_wrap' => '<ul id="menu-main-menu-1" class="navbar-nav m-auto mb-2 mb-lg-0 %2$s">%3$s</ul>',
+													'items_wrap' => '<ul id="footer-desktop-main-menu" class="navbar-nav m-auto mb-2 mb-lg-0 %2$s">%3$s</ul>',
 													'depth' => 2,
 													'walker' => new bootstrap_5_wp_nav_menu_walker_2()
 												));
@@ -31,10 +90,14 @@
 									</nav>
 								</div>
 								<div class="col-2 text-end">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" class="me-1">
-									<a href="tel:‪84993900100" class="contacts-phone">
-										8 <span>(499)</span> 390-01-00‬
-									</a>
+									<?php foreach ( $dsever_phones as $dsever_phone_i => $dsever_phone ) : ?>
+										<div class="<?php echo ( $dsever_phone_i < count( $dsever_phones ) - 1 ) ? 'mb-2' : ''; ?>">
+											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" class="me-1">
+											<a href="tel:<?php echo esc_attr( $dsever_phone['tel'] ); ?>" class="contacts-phone">
+												<?php echo esc_html( $dsever_phone['display'] ); ?>
+											</a>
+										</div>
+									<?php endforeach; ?>
 								</div>
 							</div>
 							<!-- End Desktop version -->
@@ -76,16 +139,13 @@
 											</a>
 										</li>
 										<li class="nav-item">
-											<a href="mailto:mebel-dsever@yandex.ru" class="nav-link ps-0 py-2">
-												<!--img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/email-ico.svg" class="pe-2">
-												<span>mebel-dsever@yandex.ru</span-->
-												
+											<a href="mailto:<?php echo esc_attr( $dsever_email ); ?>" class="nav-link ps-0 py-2">
 												<div style="display: flex;" class="align-items-center">
 													<div class="nav-li-float-left">
 														<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/email-ico.svg">
 													</div>
 													<div class="nav-li-float-right">
-														<span>mebel-dsever@yandex.ru</span>
+														<span><?php echo esc_html( $dsever_email ); ?></span>
 													</div>
 													<div style="clear: both;"></div>
 												</div>
@@ -119,12 +179,14 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-12">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" class="pe-2">
-									<a href="tel:‪84993900100" class="contacts-phone">
-										8<span>(499)</span> 390-01-00‬
-									</a>
-								</div>
+								<?php foreach ( $dsever_phones as $dsever_phone_i => $dsever_phone ) : ?>
+									<div class="col-12<?php echo ( $dsever_phone_i > 0 ) ? ' pt-3' : ''; ?>">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" class="pe-2">
+										<a href="tel:<?php echo esc_attr( $dsever_phone['tel'] ); ?>" class="contacts-phone">
+											<?php echo esc_html( $dsever_phone['display'] ); ?>
+										</a>
+									</div>
+								<?php endforeach; ?>
 							</div>
 							<!-- END Mobail version -->
 
@@ -164,13 +226,13 @@
 									</a>
 								</li>
 								<li class="nav-item me-1 me-lg-2">
-									<a href="mailto:mebel-dsever@yandex.ru" class="nav-link">
+									<a href="mailto:<?php echo esc_attr( $dsever_email ); ?>" class="nav-link">
 										<div style="display: flex;" class="align-items-center">
 											<div class="nav-li-float-left">
 												<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/email-ico.svg">
 											</div>
 											<div class="nav-li-float-right">
-												<span>mebel-dsever@yandex.ru</span>
+												<span><?php echo esc_html( $dsever_email ); ?></span>
 											</div>
 											<div style="clear: both;"></div>
 										</div>
@@ -359,7 +421,7 @@
 				<a data-bs-toggle="modal" data-bs-target="#callbackModal"><div class="callback-form-button-ico"></div></a>
 			</div>
 			<div id="phoneBtn" class="callback-phone-button" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Позвонить">
-				<a href="tel:84993900100"><div class="callback-phone-button-ico"></div></a>
+				<a href="tel:<?php echo esc_attr( end( $dsever_phones )['tel'] ); ?>"><div class="callback-phone-button-ico"></div></a>
 			</div>
 			<div id="whatsappBtn" class="callback-whatsapp-button" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Whatsapp">
 				<!-- Не открывает ссылку с ПК если не установлено приложение WhatsApp
@@ -460,7 +522,7 @@
 		<!-- Callback Modal -->
 		<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
-				<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php" class="modal-content">
+				<form method="post" action="<?php echo get_stylesheet_directory_uri() . $dsever_mails_dir; ?>/callback-mail.php" class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="callbackModalLabel">Обратный звонок</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -489,6 +551,7 @@
 								</label>
 							</div>
 						</div>
+						<input type="hidden" name="page_section" value="<?php echo esc_attr( $dsever_page_section_name ); ?>">
 						<input type="hidden" id="g-recaptcha-response-callback" name="g-recaptcha-response">
 						<button type="submit" class="btn btn-corporate-color-1 mx-auto">Жду звонка</button>
 					</div>
@@ -502,7 +565,7 @@
 		<!-- Рассчитать стоимость с загрузкой изображения -->
 		<div class="modal fade" id="calculatePriceWithDownloadModal" tabindex="-1" aria-labelledby="calculatePriceWithDownloadLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
-				<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/get_calculate_2.php" class="modal-content" enctype="multipart/form-data">
+				<form method="post" action="<?php echo get_stylesheet_directory_uri() . $dsever_mails_dir; ?>/get_calculate_2.php" class="modal-content" enctype="multipart/form-data">
 					<div class="modal-header">
 						<h5 class="modal-title" id="calculatePriceWithDownloadLabel">Рассчитать стоимость</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -541,6 +604,7 @@
 								</label>
 							</div>
 						</div>
+						<input type="hidden" name="page_section" value="<?php echo esc_attr( $dsever_page_section_name ); ?>">
 						<input type="hidden" id="g-recaptcha-response-calculatePriceWithDownload" name="g-recaptcha-response">
 						<button type="submit" style="border-radius: 0.5rem; background-color: var(--corporate-color-1); border-color: var(--corporate-color-1);" class="btn-lg btn btn-corporate-color-1 me-auto">Отправить</button>
 					</div>	

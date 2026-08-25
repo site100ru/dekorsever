@@ -587,6 +587,16 @@
 		font-size: 14px;
 		color: #C8C8C8;
 		text-transform: uppercase;
+		line-height: 1;
+	}
+
+	.header-nav-bottom span.nav-link {
+		line-height: 1;
+	}
+
+	.header-nav-bottom a.nav-link.top-menu-tel {
+		font-family: HelveticaNeueBoldCondensed;
+		text-transform: none;
 	}
 
 	#menu-main-menu .nav-link img,
@@ -645,16 +655,12 @@
 		z-index: 999;
 	}
 
-	#sliding-header .navbar-brand img {
+	#sliding-header .navbar-brand img,
+	#top-menu-2 .navbar-brand img {
 		max-width: 200px;
 	}
 
-	#sliding-header .nav-link img {
-		position: relative;
-		bottom: 4px;
-	}
-
-	#menu-main-menu-1 .nav-item img {
+	#footer-desktop-main-menu .nav-item img {
 		margin-bottom: 3px;
 	}
 
@@ -695,7 +701,8 @@
 			transition: 0;
 		}
 
-		#sliding-header .navbar-brand img {
+		#sliding-header .navbar-brand img,
+		#top-menu-2 .navbar-brand img {
 			max-width: 135px;
 		}
 
@@ -2264,7 +2271,7 @@
 	}
 
 
-	.contacts-section-3 #menu-main-menu-1 .nav-link,
+	.contacts-section-3 #footer-desktop-main-menu .nav-link,
 	.left-col-footer-menu .nav-link,
 	.right-col-footer-menu .nav-link {
 		font-family: Gilroy-Medium;
@@ -2274,8 +2281,8 @@
 		transition: .25s;
 	}
 
-	.contacts-section-3 #menu-main-menu-1 .nav-link:hover,
-	.contacts-section-3 #menu-main-menu-1 .nav-link.active {
+	.contacts-section-3 #footer-desktop-main-menu .nav-link:hover,
+	.contacts-section-3 #footer-desktop-main-menu .nav-link.active {
 		color: var(--corporate-color-1);
 	}
 

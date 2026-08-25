@@ -1,11 +1,12 @@
 <?php
-	
-	session_start();
-	if ( isset( $_SESSION['win'] ) ) {
-		unset( $_SESSION['win'] );
-		$_SESSION['display'] = "block";
-	} else { $_SESSION['display'] = "none"; }
-	
+
+session_start();
+if (isset($_SESSION["win"])) {
+	unset($_SESSION["win"]);
+	$_SESSION["display"] = "block";
+} else {
+	$_SESSION["display"] = "none";
+}
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -18,7 +19,7 @@
 		<meta name="keywords" content="<?php echo wp_get_document_title(); ?>" />
 		<meta property="og:locale" content="ru_RU" />
 		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+		<meta property="og:site_name" content="<?php bloginfo("name"); ?>" />
 		<meta property="og:title" content="<?php echo wp_get_document_title(); ?>" />
 		
 		<!-- Yandex verification -->
@@ -41,7 +42,7 @@
 
 		<title><?php echo echo_title(); ?></title>
 		
-		<?php if ( $counter_head = get_theme_mod( 'mytheme_counter_head' ) ) : ?>
+		<?php if ($counter_head = get_theme_mod("mytheme_counter_head")): ?>
 			<!-- Код счетчика (head) -->
 			<?php echo $counter_head; ?>
 		<?php endif; ?>
