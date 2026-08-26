@@ -449,34 +449,82 @@
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 			</div>
 		</div>
+		<!-- Desktop version -->
 		<div id="carouselExample" class="carousel slide slides" data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="row">
 						<div class="col-6 position-relative">
-							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide1.jpg" class="d-block w-100" alt="...">
-							<!-- <img class="magnifying_glass" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа"> -->
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-1.webp" alt="Мебельные фасады — работа 1" style="border-radius: 10px;">
 						</div>
 						<div class="col-6 position-relative">
-							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide2.jpg" class="d-block w-100" alt="...">
-							<!-- <img class="magnifying_glass" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа"> -->
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-2.webp" alt="Мебельные фасады — работа 2" style="border-radius: 10px;">
 						</div>
 					</div>
 				</div>
 				<div class="carousel-item">
 					<div class="row">
 						<div class="col-6 position-relative">
-							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide2.jpg" class="d-block w-100" alt="...">
-							<!-- <img class="magnifying_glass" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа"> -->
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-3.webp" alt="Мебельные фасады — работа 3" style="border-radius: 10px;">
 						</div>
 						<div class="col-6 position-relative">
-							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide1.jpg" class="d-block w-100" alt="...">
-							<!-- <img class="magnifying_glass" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа"> -->
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-4.webp" alt="Мебельные фасады — работа 4" style="border-radius: 10px;">
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-5.webp" alt="Мебельные фасады — работа 5" style="border-radius: 10px;">
+						</div>
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-6.webp" alt="Мебельные фасады — работа 6" style="border-radius: 10px;">
+						</div>
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-7.webp" alt="Мебельные фасады — работа 7" style="border-radius: 10px;">
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-8.webp" alt="Мебельные фасады — работа 8" style="border-radius: 10px;">
+						</div>
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-9.webp" alt="Мебельные фасады — работа 9" style="border-radius: 10px;">
+						</div>
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-10.webp" alt="Мебельные фасады — работа 10" style="border-radius: 10px;">
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-11.webp" alt="Мебельные фасады — работа 11" style="border-radius: 10px;">
+						</div>
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-12.webp" alt="Мебельные фасады — работа 12" style="border-radius: 10px;">
+						</div>
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-13.webp" alt="Мебельные фасады — работа 13" style="border-radius: 10px;">
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-14.webp" alt="Мебельные фасады — работа 14" style="border-radius: 10px;">
+						</div>
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-15.webp" alt="Мебельные фасады — работа 15" style="border-radius: 10px;">
+						</div>
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-16.webp" alt="Мебельные фасады — работа 16" style="border-radius: 10px;">
 						</div>
 					</div>
 				</div>
 			</div>
-
 			<!-- Кнопки переключения -->
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -486,20 +534,58 @@
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
 			</button>
-		</div>
-		<div id="carouselExampleMb" class="carousel slide Mb" data-bs-ride="carousel">
+		</div><!-- End desktop version -->
+
+		<!-- Mobile version -->
+		<div id="carouselExampleMb" class="carousel slide Mb"><!-- data-bs-ride="carousel" -->
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide1.jpg" alt="Slide 1">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-1.webp" alt="Мебельные фасады — работа 1" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide2.jpg" alt="Slide 2">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-2.webp" alt="Мебельные фасады — работа 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide1.jpg" alt="Slide 3">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-3.webp" alt="Мебельные фасады — работа 3" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide2.jpg" alt="Slide 2">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-4.webp" alt="Мебельные фасады — работа 4" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-5.webp" alt="Мебельные фасады — работа 5" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-6.webp" alt="Мебельные фасады — работа 6" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-7.webp" alt="Мебельные фасады — работа 7" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-8.webp" alt="Мебельные фасады — работа 8" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-9.webp" alt="Мебельные фасады — работа 9" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-10.webp" alt="Мебельные фасады — работа 10" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-11.webp" alt="Мебельные фасады — работа 11" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-12.webp" alt="Мебельные фасады — работа 12" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-13.webp" alt="Мебельные фасады — работа 13" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-14.webp" alt="Мебельные фасады — работа 14" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-15.webp" alt="Мебельные фасады — работа 15" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-16.webp" alt="Мебельные фасады — работа 16" style="border-radius: 10px;">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleMb" data-bs-slide="prev">
@@ -510,7 +596,7 @@
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
 			</button>
-		</div>
+		</div><!-- End mobile version -->
 		<div class="slider_btn_block">
 			<a href="/portfolio" class="slider_btn btn btn-lg btn-corporate-color-1">Все наши работы</a>
 		</div>

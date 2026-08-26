@@ -446,72 +446,72 @@ get_header("3"); ?>
 				<div class="carousel-item active">
 					<div class="row">
 						<div class="col-6 position-relative">
-							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide1.jpg" class="d-block w-100" alt="..." style="border-radius: 10px;">
+							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/slide1.webp" class="d-block w-100" alt="..." style="border-radius: 10px;">
 						</div>
 						<div class="col-6 position-relative">
-							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide2.jpg" class="d-block w-100" alt="..." style="border-radius: 10px;">
+							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/slide2.webp" class="d-block w-100" alt="..." style="border-radius: 10px;">
 						</div>
 					</div>
 				</div>
 				<div class="carousel-item">
 					<div class="row">
 						<div class="col-6 position-relative">
-							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-1.jpg" class="d-block w-100" alt="..." style="border-radius: 10px;">
+							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-1.webp" class="d-block w-100" alt="..." style="border-radius: 10px;">
 						</div>
 						<div class="col-6 position-relative">
-							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-2.jpg" class="d-block w-100" alt="..." style="border-radius: 10px;">
+							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-2.webp" class="d-block w-100" alt="..." style="border-radius: 10px;">
 						</div>
 					</div>
 				</div>
 				<div class="carousel-item">
 					<div class="row">
 						<div class="col-4 position-relative">
-							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-3.jpg" class="d-block w-100" alt="..." style="border-radius: 10px;">
+							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-3.webp" class="d-block w-100" alt="..." style="border-radius: 10px;">
 						</div>
 						<div class="col-4 position-relative">
-							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-4.jpg" class="d-block w-100" alt="..." style="border-radius: 10px;">
+							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-4.webp" class="d-block w-100" alt="..." style="border-radius: 10px;">
 						</div>
 						<div class="col-4 position-relative">
-							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-5.jpg" class="d-block w-100" alt="..." style="border-radius: 10px;">
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="row">
-						<div class="col-4 position-relative">
-							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-6.jpg" alt="..." style="border-radius: 10px;">
-						</div>
-						<div class="col-4 position-relative">
-							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-7.jpg" alt="..." style="border-radius: 10px;">
-						</div>
-						<div class="col-4 position-relative">
-							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-8.jpg" alt="..." style="border-radius: 10px;">
+							<img class="slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-5.webp" class="d-block w-100" alt="..." style="border-radius: 10px;">
 						</div>
 					</div>
 				</div>
 				<div class="carousel-item">
 					<div class="row">
 						<div class="col-4 position-relative">
-							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-9.jpg" alt="..." style="border-radius: 10px;">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-6.webp" alt="..." style="border-radius: 10px;">
 						</div>
 						<div class="col-4 position-relative">
-							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-10.jpg" alt="..." style="border-radius: 10px;">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-7.webp" alt="..." style="border-radius: 10px;">
 						</div>
 						<div class="col-4 position-relative">
-							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-11.jpg" alt="..." style="border-radius: 10px;">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-8.webp" alt="..." style="border-radius: 10px;">
 						</div>
 					</div>
 				</div>
 				<div class="carousel-item">
 					<div class="row">
 						<div class="col-4 position-relative">
-							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-12.jpg" alt="..." style="border-radius: 10px;">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-9.webp" alt="..." style="border-radius: 10px;">
 						</div>
 						<div class="col-4 position-relative">
-							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-13.jpg" alt="..." style="border-radius: 10px;">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-10.webp" alt="..." style="border-radius: 10px;">
 						</div>
 						<div class="col-4 position-relative">
-							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-14.jpg" alt="..." style="border-radius: 10px;">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-11.webp" alt="..." style="border-radius: 10px;">
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-12.webp" alt="..." style="border-radius: 10px;">
+						</div>
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-13.webp" alt="..." style="border-radius: 10px;">
+						</div>
+						<div class="col-4 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-14.webp" alt="..." style="border-radius: 10px;">
 						</div>
 					</div>
 				</div>
@@ -531,52 +531,52 @@ get_header("3"); ?>
 		<div id="carouselExampleMb" class="carousel slide Mb"><!-- data-bs-ride="carousel" -->
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide1.jpg" alt="Slide 1" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/slide1.webp" alt="Slide 1" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide2.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/slide2.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-1.jpg" alt="Slide 3" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-1.webp" alt="Slide 3" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-2.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-2.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-3.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-3.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-4.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-4.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-5.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-5.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-6.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-6.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-7.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-7.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-8.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-8.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-9.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-9.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-10.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-10.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-11.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-11.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-12.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-12.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-13.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-13.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
-					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-14.jpg" alt="Slide 2" style="border-radius: 10px;">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/painting-portfolio-img-14.webp" alt="Slide 2" style="border-radius: 10px;">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleMb" data-bs-slide="prev">
