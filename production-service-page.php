@@ -455,6 +455,16 @@
 				<div class="carousel-item active">
 					<div class="row">
 						<div class="col-6 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/slide1.webp" alt="..." style="border-radius: 10px;">
+						</div>
+						<div class="col-6 position-relative">
+							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/slide2.webp" alt="..." style="border-radius: 10px;">
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-6 position-relative">
 							<img class="d-block w-100 slider" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-1.webp" alt="Мебельные фасады — работа 1" style="border-radius: 10px;">
 						</div>
 						<div class="col-6 position-relative">
@@ -540,6 +550,12 @@
 		<div id="carouselExampleMb" class="carousel slide Mb"><!-- data-bs-ride="carousel" -->
 			<div class="carousel-inner">
 				<div class="carousel-item active">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/slide1.webp" alt="Slide 1" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
+					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painting-portfolio/slide2.webp" alt="Slide 2" style="border-radius: 10px;">
+				</div>
+				<div class="carousel-item">
 					<img class="slider d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facade-portfolio/facade-portfolio-img-1.webp" alt="Мебельные фасады — работа 1" style="border-radius: 10px;">
 				</div>
 				<div class="carousel-item">
